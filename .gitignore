@@ -1,0 +1,6 @@
+results/
+*.html
+node_modules/
+.env
+.env.*
+!docs/.env

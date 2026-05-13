@@ -1,0 +1,517 @@
+[
+  {
+    "username": "admin",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "username": "user",
+    "password": "user123",
+    "role": "user"
+  },
+  {
+    "username": "leader",
+    "password": "leader123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.001",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.002",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.003",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.004",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.005",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.006",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.007",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.008",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.009",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.010",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.011",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.012",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.013",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.014",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.015",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.016",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.017",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.018",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.019",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.020",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.021",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.022",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.023",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.024",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.025",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.026",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.027",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.028",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.029",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.030",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.031",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.032",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.033",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.034",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.035",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.036",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.037",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.038",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.039",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.040",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.041",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.042",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.043",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.044",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.045",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.046",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.047",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.048",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.049",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.050",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.051",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.052",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.053",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.054",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.055",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.056",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.057",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.058",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.059",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.060",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.061",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.062",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.063",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.064",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.065",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.066",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.067",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.068",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.069",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.070",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.071",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.072",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.073",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.074",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.075",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.076",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.077",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.078",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.079",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.user.080",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.admin.001",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.002",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.003",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.004",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.005",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.006",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.007",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.008",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.009",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.admin.010",
+    "password": "LoadTest@123",
+    "role": "admin"
+  },
+  {
+    "username": "lt.leader.001",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.002",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.003",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.004",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.005",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.006",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.007",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.008",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.009",
+    "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "lt.leader.010",
+    "password": "LoadTest@123",
+    "role": "user"
+  }
+]
