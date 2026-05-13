@@ -1,20 +1,5 @@
 [
   {
-    "username": "admin",
-    "password": "admin123",
-    "role": "admin"
-  },
-  {
-    "username": "user",
-    "password": "user123",
-    "role": "user"
-  },
-  {
-    "username": "leader",
-    "password": "leader123",
-    "role": "user"
-  },
-  {
     "username": "lt.user.001",
     "password": "LoadTest@123",
     "role": "user"
@@ -512,6 +497,21 @@
   {
     "username": "lt.leader.010",
     "password": "LoadTest@123",
+    "role": "user"
+  },
+  {
+    "username": "admin",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "username": "user",
+    "password": "user123",
+    "role": "user"
+  },
+  {
+    "username": "leader",
+    "password": "leader123",
     "role": "user"
   }
 ]

@@ -18,6 +18,7 @@ const users = new SharedArray('users', function () {
 });
 
 export const options = {
+  summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
   stages: stages.load,
   thresholds: {
     http_req_failed: ['rate<0.01'],

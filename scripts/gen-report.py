@@ -9,7 +9,7 @@ Usage:
     # Hoặc gọi tự động từ run-all.sh (truyền danh sách file JSON qua args)
 """
 
-import json, sys, re
+import glob, json, sys, re
 from pathlib import Path
 from datetime import datetime
 
@@ -36,7 +36,7 @@ def parse_threshold(expr: str, metric_values: dict) -> tuple[float | None, str]:
 
 def load_json(path: Path) -> dict:
     try:
-        return json.loads(path.read_text())
+        return json.loads(path.read_text(encoding="utf-8"))
     except Exception as e:
         print(f"[WARN] cannot read {path}: {e}", file=sys.stderr)
         return {}
@@ -49,6 +49,22 @@ def test_label(filename: str) -> str:
         if p in ("smoke", "load", "stress", "spike", "soak"):
             return p
     return Path(filename).stem
+
+
+def percentile(values: dict, pct: int) -> float | None:
+    return values.get(f"p({pct})") or values.get(f"p({pct}.0)")
+
+
+def format_ms(value: float | None) -> str:
+    return f"{value:.0f} ms" if value is not None else "—"
+
+
+def format_percent(value: float | None) -> str:
+    return f"{value * 100:.2f}%" if value is not None else "—"
+
+
+def format_rate(value: float | None) -> str:
+    return f"{value:.1f}/s" if value is not None else "—"
 
 
 ORDER = ["smoke", "load", "stress", "spike", "soak"]
@@ -156,17 +172,17 @@ def render_stats(metrics: dict) -> str:
     pills = []
     dur = metrics.get("http_req_duration", {}).get("values", {})
     if dur:
-        pills.append(f'<div class="stat"><span>{dur.get("p(95)", dur.get("p(95.0)", "—")):.0f} ms</span>p(95)</div>')
+        pills.append(f'<div class="stat"><span>{format_ms(percentile(dur, 95))}</span>p95 latency</div>')
+        pills.append(f'<div class="stat"><span>{format_ms(percentile(dur, 99))}</span>p99 latency</div>')
         pills.append(f'<div class="stat"><span>{dur.get("avg", 0):.0f} ms</span>avg</div>')
         pills.append(f'<div class="stat"><span>{dur.get("max", 0):.0f} ms</span>max</div>')
     failed = metrics.get("http_req_failed", {}).get("values", {})
     if failed:
-        rate = failed.get("rate", 0)
-        pills.append(f'<div class="stat"><span>{rate*100:.2f}%</span>error rate</div>')
+        pills.append(f'<div class="stat"><span>{format_percent(failed.get("rate"))}</span>error rate</div>')
     reqs = metrics.get("http_reqs", {}).get("values", {})
     if reqs:
         pills.append(f'<div class="stat"><span>{reqs.get("count", 0):.0f}</span>total requests</div>')
-        pills.append(f'<div class="stat"><span>{reqs.get("rate", 0):.1f}/s</span>req/s</div>')
+        pills.append(f'<div class="stat"><span>{format_rate(reqs.get("rate"))}</span>requests/sec</div>')
     return '<div class="stats">' + "".join(pills) + "</div>" if pills else ""
 
 
@@ -225,14 +241,17 @@ def render_summary_table(entries: list[dict]) -> str:
             f'<td style="color:{"#065f46" if e["n_fail"]==0 else "#991b1b"}">'
             f'{e["n_pass"]}/{e["n_thr"]}</td>'
             f"<td>{e['p95']}</td>"
+            f"<td>{e['p99']}</td>"
             f"<td>{e['error_rate']}</td>"
+            f"<td>{e['requests_per_second']}</td>"
             f"</tr>"
         )
     return f"""
 <table class="summary-table">
   <thead>
     <tr><th>Test</th><th>Mục tiêu</th><th>Kết quả</th>
-        <th>Thresholds</th><th>Pass</th><th>p(95) ms</th><th>Error rate</th></tr>
+        <th>Thresholds</th><th>Pass</th><th>p95 latency</th><th>p99 latency</th>
+        <th>Error rate</th><th>Requests/sec</th></tr>
   </thead>
   <tbody>{rows}</tbody>
 </table>"""
@@ -244,7 +263,13 @@ def main():
     if len(sys.argv) < 2:
         sys.exit("Usage: gen-report.py <file1.json> [file2.json ...]")
 
-    files = [Path(p) for p in sys.argv[1:] if Path(p).exists()]
+    files = []
+    for arg in sys.argv[1:]:
+        matches = glob.glob(arg)
+        if matches:
+            files.extend(Path(p) for p in matches)
+        elif Path(arg).exists():
+            files.append(Path(arg))
     if not files:
         sys.exit("Không tìm thấy file JSON nào.")
 
@@ -271,14 +296,17 @@ def main():
         n_fail = sum(1 for _, r in all_thr if not r.get("ok"))
         overall = "PASS" if n_fail == 0 and all_thr else ("FAIL" if n_fail > 0 else "NO DATA")
         dur = metrics.get("http_req_duration", {}).get("values", {})
-        p95_raw = dur.get("p(95)") or dur.get("p(95.0)")
-        p95 = f"{p95_raw:.0f} ms" if p95_raw else "—"
+        p95 = format_ms(percentile(dur, 95))
+        p99 = format_ms(percentile(dur, 99))
         failed = metrics.get("http_req_failed", {}).get("values", {})
-        er = failed.get("rate")
-        error_rate = f"{er*100:.2f}%" if er is not None else "—"
+        error_rate = format_percent(failed.get("rate"))
+        reqs = metrics.get("http_reqs", {}).get("values", {})
+        requests_per_second = format_rate(reqs.get("rate"))
         summary_entries.append({"label": label, "overall": overall,
                                  "n_thr": len(all_thr), "n_pass": n_pass,
-                                 "n_fail": n_fail, "p95": p95, "error_rate": error_rate})
+                                 "n_fail": n_fail, "p95": p95, "p99": p99,
+                                 "error_rate": error_rate,
+                                 "requests_per_second": requests_per_second})
 
     # Build test cards
     cards_html = "\n".join(render_test_card(label, data) for label, _, data in ordered)
@@ -322,7 +350,7 @@ def main():
     out_dir  = Path("results")
     out_dir.mkdir(exist_ok=True)
     out_file = out_dir / f"{luong_name}-report-{datetime.now().strftime('%Y-%m-%dT%H-%M-%S')}.html"
-    out_file.write_text(html)
+    out_file.write_text(html, encoding="utf-8")
     print(f"[report] {out_file}")
 
 

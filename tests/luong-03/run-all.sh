@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Chạy toàn bộ 5 test cho Luồng 01, sinh HTML report tổng hợp.
+# Chạy toàn bộ 5 test cho Luồng 02, sinh HTML report tổng hợp.
 #
 # Usage:
-#   bash tests/luong-01/run-all.sh
-#   BASE_URL=http://staging:29002/api bash tests/luong-01/run-all.sh
-#   bash tests/luong-01/run-all.sh smoke load   # chỉ chạy 1 số test
+#   bash tests/luong-03/run-all.sh
+#   BASE_URL=http://staging:29002/api bash tests/luong-03/run-all.sh
+#   bash tests/luong-03/run-all.sh smoke load   # chỉ chạy 1 số test
 
 set -euo pipefail
 
@@ -12,7 +12,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$DIR/../.." && pwd)"
 BASE_URL="${BASE_URL:-http://localhost:29002/api}"
 QUICK="${QUICK:-true}"
-LUONG="luong-01"
+LUONG="luong-03"
 TESTS=("smoke" "load" "stress" "spike")
 
 if [[ $# -gt 0 ]]; then
@@ -58,7 +58,6 @@ for TEST in "${TESTS[@]}"; do
   END=$(date +%s)
   DURATIONS[$TEST]=$((END - START))
 
-  # Lấy file JSON mới nhất vừa sinh ra
   LATEST_JSON=$(ls -t "$ROOT/results/${LUONG}-${TEST}-"*.json 2>/dev/null | head -1 || true)
   [[ -n "$LATEST_JSON" ]] && JSON_FILES[$TEST]="$LATEST_JSON"
 

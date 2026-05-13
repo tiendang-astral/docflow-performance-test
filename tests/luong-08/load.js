@@ -16,6 +16,7 @@ const users = new SharedArray('users', function () {
 });
 
 export const options = {
+  summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
   stages: [
     { duration: '2m',  target: 20 },
     { duration: '15m', target: 20 },

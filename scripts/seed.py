@@ -225,11 +225,22 @@ class Client:
         self.dry_run  = dry_run
         self.session  = requests.Session()
         self.csrf     = ""
+        self.access_token = ""
+        self.refresh_token = ""
 
     def _url(self, path): return f"{self.base_url}{path}"
 
     def _headers(self, extra=None):
         h = {"Content-Type": "application/json"}
+        cookie_parts = []
+        if self.access_token:
+            cookie_parts.append(f"docai_access_token={self.access_token}")
+        if self.refresh_token:
+            cookie_parts.append(f"docai_refresh_token={self.refresh_token}")
+        if self.csrf:
+            cookie_parts.append(f"docai_csrf_token={self.csrf}")
+        if cookie_parts:
+            h["Cookie"] = "; ".join(cookie_parts)
         if self.csrf: h["X-CSRF-Token"] = self.csrf
         if extra: h.update(extra)
         return h
@@ -243,9 +254,12 @@ class Client:
         if res.status_code != 200:
             print(f"[ERROR] login: {res.status_code} {res.text[:200]}")
             return False
-        csrf_res   = self.session.get(self._url("/v1/auth/csrf"))
+        body = res.json()
+        self.access_token = body.get("access_token", "")
+        self.refresh_token = body.get("refresh_token", "")
+        csrf_res   = self.session.get(self._url("/v1/auth/csrf"), headers=self._headers())
         self.csrf  = (csrf_res.cookies.get("docai_csrf_token") or
-                      csrf_res.json().get("csrf_token", ""))
+                      (csrf_res.json().get("csrf_token", "") if csrf_res.content else ""))
         print(f"[OK] Logged in as {username}")
         return True
 
@@ -349,11 +363,13 @@ def seed_members(c: Client, users: list, departments: list) -> None:
 
 
 def seed_templates(c: Client, templates_def: list, departments: list) -> list:
-    existing = {t["name"] for t in c.fetch_all("/v1/templates")}
+    existing = {t["name"]: t for t in c.fetch_all("/v1/templates")}
     result, skipped = [], 0
     for i, tmpl in enumerate(templates_def):
-        if tmpl["name"] in existing:
+        existing_tmpl = existing.get(tmpl["name"])
+        if existing_tmpl:
             skipped += 1
+            result.append(existing_tmpl)
             continue
         dept_id = departments[i % len(departments)]["id"] if departments else None
         payload = {k: v for k, v in tmpl.items() if k != "fields"}
@@ -371,11 +387,13 @@ def seed_templates(c: Client, templates_def: list, departments: list) -> list:
 
 
 def seed_rules(c: Client, rules_def: list, departments: list) -> list:
-    existing = {r["name"] for r in c.fetch_all("/v1/rules")}
+    existing = {r["name"]: r for r in c.fetch_all("/v1/rules")}
     result, skipped = [], 0
     for i, rule in enumerate(rules_def):
-        if rule["name"] in existing:
+        existing_rule = existing.get(rule["name"])
+        if existing_rule:
             skipped += 1
+            result.append(existing_rule)
             continue
         dept_id = departments[i % len(departments)]["id"] if departments else None
         payload = {k: v for k, v in rule.items() if k != "tags"}
@@ -391,11 +409,13 @@ def seed_rules(c: Client, rules_def: list, departments: list) -> list:
 
 
 def seed_dossiers(c: Client, dossiers_def: list, templates: list, departments: list) -> list:
-    existing = {d["name"] for d in c.fetch_all("/v1/dossiers")}
+    existing = {d["name"]: d for d in c.fetch_all("/v1/dossiers")}
     result, skipped = [], 0
     for i, dossier in enumerate(dossiers_def):
-        if dossier["name"] in existing:
+        existing_dossier = existing.get(dossier["name"])
+        if existing_dossier:
             skipped += 1
+            result.append(existing_dossier)
             continue
         dept_id  = departments[i % len(departments)]["id"] if departments else None
         tmpl_ids = [templates[i % len(templates)]["id"]] if templates else []

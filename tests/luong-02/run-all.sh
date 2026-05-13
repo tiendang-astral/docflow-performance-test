@@ -13,7 +13,7 @@ ROOT="$(cd "$DIR/../.." && pwd)"
 BASE_URL="${BASE_URL:-http://localhost:29002/api}"
 QUICK="${QUICK:-true}"
 LUONG="luong-02"
-TESTS=("smoke" "load" "stress" "spike" "soak")
+TESTS=("smoke" "load" "stress" "spike")
 
 if [[ $# -gt 0 ]]; then
   TESTS=("$@")

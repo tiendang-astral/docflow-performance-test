@@ -16,6 +16,7 @@ const users = new SharedArray('users', function () {
 });
 
 export const options = {
+  summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
   vus: 1,
   duration: '10s',
   thresholds: {

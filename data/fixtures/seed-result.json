@@ -1,481 +1,425 @@
 {
   "departments": [
     {
-      "id": 4,
+      "id": 1,
       "name": "Phòng Hành chính"
     },
     {
-      "id": 5,
+      "id": 2,
       "name": "Phòng Kỹ thuật"
     },
     {
-      "id": 6,
+      "id": 3,
       "name": "Phòng Kinh doanh"
     },
     {
-      "id": 7,
+      "id": 4,
       "name": "Phòng Kế toán"
     },
     {
-      "id": 8,
+      "id": 5,
       "name": "Phòng Pháp chế"
     }
   ],
   "users": [
     {
       "id": 4,
-      "username": "lt.user.01"
-    },
-    {
-      "id": 5,
-      "username": "lt.user.02"
-    },
-    {
-      "id": 6,
-      "username": "lt.user.03"
-    },
-    {
-      "id": 7,
-      "username": "lt.user.04"
-    },
-    {
-      "id": 8,
-      "username": "lt.user.05"
-    },
-    {
-      "id": 9,
-      "username": "lt.user.06"
-    },
-    {
-      "id": 10,
-      "username": "lt.user.07"
-    },
-    {
-      "id": 11,
-      "username": "lt.user.08"
-    },
-    {
-      "id": 12,
-      "username": "lt.admin.01"
-    },
-    {
-      "id": 13,
-      "username": "lt.admin.02"
-    },
-    {
-      "id": 14,
-      "username": "lt.admin.03"
-    },
-    {
-      "id": 15,
-      "username": "lt.leader.01"
-    },
-    {
-      "id": 16,
-      "username": "lt.leader.02"
-    },
-    {
-      "id": 17,
-      "username": "lt.leader.03"
-    },
-    {
-      "id": 18,
       "username": "lt.user.001"
     },
     {
-      "id": 19,
+      "id": 5,
       "username": "lt.user.002"
     },
     {
-      "id": 20,
+      "id": 6,
       "username": "lt.user.003"
     },
     {
-      "id": 21,
+      "id": 7,
       "username": "lt.user.004"
     },
     {
-      "id": 22,
+      "id": 8,
       "username": "lt.user.005"
     },
     {
-      "id": 23,
+      "id": 9,
       "username": "lt.user.006"
     },
     {
-      "id": 24,
+      "id": 10,
       "username": "lt.user.007"
     },
     {
-      "id": 25,
+      "id": 11,
       "username": "lt.user.008"
     },
     {
-      "id": 26,
+      "id": 12,
       "username": "lt.user.009"
     },
     {
-      "id": 27,
+      "id": 13,
       "username": "lt.user.010"
     },
     {
-      "id": 28,
+      "id": 14,
       "username": "lt.user.011"
     },
     {
-      "id": 29,
+      "id": 15,
       "username": "lt.user.012"
     },
     {
-      "id": 30,
+      "id": 16,
       "username": "lt.user.013"
     },
     {
-      "id": 31,
+      "id": 17,
       "username": "lt.user.014"
     },
     {
-      "id": 32,
+      "id": 18,
       "username": "lt.user.015"
     },
     {
-      "id": 33,
+      "id": 19,
       "username": "lt.user.016"
     },
     {
-      "id": 34,
+      "id": 20,
       "username": "lt.user.017"
     },
     {
-      "id": 35,
+      "id": 21,
       "username": "lt.user.018"
     },
     {
-      "id": 36,
+      "id": 22,
       "username": "lt.user.019"
     },
     {
-      "id": 37,
+      "id": 23,
       "username": "lt.user.020"
     },
     {
-      "id": 38,
+      "id": 24,
       "username": "lt.user.021"
     },
     {
-      "id": 39,
+      "id": 25,
       "username": "lt.user.022"
     },
     {
-      "id": 40,
+      "id": 26,
       "username": "lt.user.023"
     },
     {
-      "id": 41,
+      "id": 27,
       "username": "lt.user.024"
     },
     {
-      "id": 42,
+      "id": 28,
       "username": "lt.user.025"
     },
     {
-      "id": 43,
+      "id": 29,
       "username": "lt.user.026"
     },
     {
-      "id": 44,
+      "id": 30,
       "username": "lt.user.027"
     },
     {
-      "id": 45,
+      "id": 31,
       "username": "lt.user.028"
     },
     {
-      "id": 46,
+      "id": 32,
       "username": "lt.user.029"
     },
     {
-      "id": 47,
+      "id": 33,
       "username": "lt.user.030"
     },
     {
-      "id": 48,
+      "id": 34,
       "username": "lt.user.031"
     },
     {
-      "id": 49,
+      "id": 35,
       "username": "lt.user.032"
     },
     {
-      "id": 50,
+      "id": 36,
       "username": "lt.user.033"
     },
     {
-      "id": 51,
+      "id": 37,
       "username": "lt.user.034"
     },
     {
-      "id": 52,
+      "id": 38,
       "username": "lt.user.035"
     },
     {
-      "id": 53,
+      "id": 39,
       "username": "lt.user.036"
     },
     {
-      "id": 54,
+      "id": 40,
       "username": "lt.user.037"
     },
     {
-      "id": 55,
+      "id": 41,
       "username": "lt.user.038"
     },
     {
-      "id": 56,
+      "id": 42,
       "username": "lt.user.039"
     },
     {
-      "id": 57,
+      "id": 43,
       "username": "lt.user.040"
     },
     {
-      "id": 58,
+      "id": 44,
       "username": "lt.user.041"
     },
     {
-      "id": 59,
+      "id": 45,
       "username": "lt.user.042"
     },
     {
-      "id": 60,
+      "id": 46,
       "username": "lt.user.043"
     },
     {
-      "id": 61,
+      "id": 47,
       "username": "lt.user.044"
     },
     {
-      "id": 62,
+      "id": 48,
       "username": "lt.user.045"
     },
     {
-      "id": 63,
+      "id": 49,
       "username": "lt.user.046"
     },
     {
-      "id": 64,
+      "id": 50,
       "username": "lt.user.047"
     },
     {
-      "id": 65,
+      "id": 51,
       "username": "lt.user.048"
     },
     {
-      "id": 66,
+      "id": 52,
       "username": "lt.user.049"
     },
     {
-      "id": 67,
+      "id": 53,
       "username": "lt.user.050"
     },
     {
-      "id": 68,
+      "id": 54,
       "username": "lt.user.051"
     },
     {
-      "id": 69,
+      "id": 55,
       "username": "lt.user.052"
     },
     {
-      "id": 70,
+      "id": 56,
       "username": "lt.user.053"
     },
     {
-      "id": 71,
+      "id": 57,
       "username": "lt.user.054"
     },
     {
-      "id": 72,
+      "id": 58,
       "username": "lt.user.055"
     },
     {
-      "id": 73,
+      "id": 59,
       "username": "lt.user.056"
     },
     {
-      "id": 74,
+      "id": 60,
       "username": "lt.user.057"
     },
     {
-      "id": 75,
+      "id": 61,
       "username": "lt.user.058"
     },
     {
-      "id": 76,
+      "id": 62,
       "username": "lt.user.059"
     },
     {
-      "id": 77,
+      "id": 63,
       "username": "lt.user.060"
     },
     {
-      "id": 78,
+      "id": 64,
       "username": "lt.user.061"
     },
     {
-      "id": 79,
+      "id": 65,
       "username": "lt.user.062"
     },
     {
-      "id": 80,
+      "id": 66,
       "username": "lt.user.063"
     },
     {
-      "id": 81,
+      "id": 67,
       "username": "lt.user.064"
     },
     {
-      "id": 82,
+      "id": 68,
       "username": "lt.user.065"
     },
     {
-      "id": 83,
+      "id": 69,
       "username": "lt.user.066"
     },
     {
-      "id": 84,
+      "id": 70,
       "username": "lt.user.067"
     },
     {
-      "id": 85,
+      "id": 71,
       "username": "lt.user.068"
     },
     {
-      "id": 86,
+      "id": 72,
       "username": "lt.user.069"
     },
     {
-      "id": 87,
+      "id": 73,
       "username": "lt.user.070"
     },
     {
-      "id": 88,
+      "id": 74,
       "username": "lt.user.071"
     },
     {
-      "id": 89,
+      "id": 75,
       "username": "lt.user.072"
     },
     {
-      "id": 90,
+      "id": 76,
       "username": "lt.user.073"
     },
     {
-      "id": 91,
+      "id": 77,
       "username": "lt.user.074"
     },
     {
-      "id": 92,
+      "id": 78,
       "username": "lt.user.075"
     },
     {
-      "id": 93,
+      "id": 79,
       "username": "lt.user.076"
     },
     {
-      "id": 94,
+      "id": 80,
       "username": "lt.user.077"
     },
     {
-      "id": 95,
+      "id": 81,
       "username": "lt.user.078"
     },
     {
-      "id": 96,
+      "id": 82,
       "username": "lt.user.079"
     },
     {
-      "id": 97,
+      "id": 83,
       "username": "lt.user.080"
     },
     {
-      "id": 98,
+      "id": 84,
       "username": "lt.admin.001"
     },
     {
-      "id": 99,
+      "id": 85,
       "username": "lt.admin.002"
     },
     {
-      "id": 100,
+      "id": 86,
       "username": "lt.admin.003"
     },
     {
-      "id": 101,
+      "id": 87,
       "username": "lt.admin.004"
     },
     {
-      "id": 102,
+      "id": 88,
       "username": "lt.admin.005"
     },
     {
-      "id": 103,
+      "id": 89,
       "username": "lt.admin.006"
     },
     {
-      "id": 104,
+      "id": 90,
       "username": "lt.admin.007"
     },
     {
-      "id": 105,
+      "id": 91,
       "username": "lt.admin.008"
     },
     {
-      "id": 106,
+      "id": 92,
       "username": "lt.admin.009"
     },
     {
-      "id": 107,
+      "id": 93,
       "username": "lt.admin.010"
     },
     {
-      "id": 108,
+      "id": 94,
       "username": "lt.leader.001"
     },
     {
-      "id": 109,
+      "id": 95,
       "username": "lt.leader.002"
     },
     {
-      "id": 110,
+      "id": 96,
       "username": "lt.leader.003"
     },
     {
-      "id": 111,
+      "id": 97,
       "username": "lt.leader.004"
     },
     {
-      "id": 112,
+      "id": 98,
       "username": "lt.leader.005"
     },
     {
-      "id": 113,
+      "id": 99,
       "username": "lt.leader.006"
     },
     {
-      "id": 114,
+      "id": 100,
       "username": "lt.leader.007"
     },
     {
-      "id": 115,
+      "id": 101,
       "username": "lt.leader.008"
     },
     {
-      "id": 116,
+      "id": 102,
       "username": "lt.leader.009"
     },
     {
-      "id": 117,
+      "id": 103,
       "username": "lt.leader.010"
     }
   ],
