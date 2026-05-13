@@ -1,14 +1,15 @@
 /**
- * Luồng 01 — Stress Test
- * Mục tiêu: tìm ngưỡng hệ thống bắt đầu chậm hoặc lỗi.
- * VUs tăng dần: 20 → 50 → 100 → 200.
+ * Luồng 02 — Stress Test
+ * Mục tiêu: tìm điểm hệ thống bắt đầu suy giảm khi tải tăng dần.
  *
  * Run:
- *   k6 run tests/luong-01/stress.js
+ *   k6 run tests/luong-02/stress.js
+ *   k6 run -e BASE_URL=http://staging:29002/api tests/luong-02/stress.js
+ *   k6 run -e QUICK=false tests/luong-02/stress.js   # full 22-min run
  */
 
 import { SharedArray } from 'k6/data';
-import runFlow from '../../flows/luong-01.flow.js';
+import runFlow from '../../flows/luong-02.flow.js';
 import { buildSummary } from '../../lib/report.js';
 import { stages } from '../../lib/stages.js';
 
@@ -28,4 +29,4 @@ export default function () {
   runFlow(users);
 }
 
-export const handleSummary = buildSummary('luong-01-stress');
+export const handleSummary = buildSummary('luong-02-stress');

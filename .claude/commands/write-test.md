@@ -286,7 +286,7 @@ export const options = {
 
 ---
 
-## Step 5 — Verify
+## Step 5 — Verify files
 
 After writing all 6 files, run:
 
@@ -294,4 +294,24 @@ After writing all 6 files, run:
 ls -la flows/luong-$(printf '%02d' $ARGUMENTS).flow.js tests/luong-$(printf '%02d' $ARGUMENTS)/
 ```
 
-Report what was created, which API endpoints and tag names the flow file uses, and note any endpoint whose schema could not be found in `docs/api.json`.
+---
+
+## Step 6 — Smoke test
+
+Run the smoke test to confirm all files are valid and the flow executes end-to-end:
+
+```bash
+k6 run tests/luong-$(printf '%02d' $ARGUMENTS)/smoke.js
+```
+
+**Interpret results:**
+
+- If **all checks pass** → report success, list the endpoints and tag names used.
+- If **any check fails** (`✗`):
+  1. Add `console.error` logging to the failing group to print `res.status` and `res.body`.
+  2. Re-run smoke to capture the error message.
+  3. Fix the flow file (wrong URL, unexpected status code, wrong request body shape, etc.).
+  4. Remove the temporary `console.error` lines once all checks pass.
+  5. Re-run smoke one final time to confirm clean output.
+
+Note any endpoint whose schema could not be found in `docs/api.json`.

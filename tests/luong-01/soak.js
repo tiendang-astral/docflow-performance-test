@@ -10,17 +10,14 @@
 import { SharedArray } from 'k6/data';
 import runFlow from '../../flows/luong-01.flow.js';
 import { buildSummary } from '../../lib/report.js';
+import { stages } from '../../lib/stages.js';
 
 const users = new SharedArray('users', function () {
   return JSON.parse(open('../../data/users.json'));
 });
 
 export const options = {
-  stages: [
-    { duration: '5m', target: 20 },   // ramp up
-    { duration: '2h', target: 20 },   // sustained load
-    { duration: '5m', target: 0 },    // ramp down
-  ],
+  stages: stages.soak,
   thresholds: {
     http_req_failed: ['rate<0.01'],
     http_req_duration: ['p(95)<2000'],
