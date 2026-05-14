@@ -7,7 +7,7 @@
  *   03  POST /api/v1/rules                            — tạo quy tắc mới
  *   04  GET  /api/v1/rules/{id}                       — xem chi tiết quy tắc
  *   05  PUT  /api/v1/rules/{id}                       — cập nhật quy tắc
- *   06  GET  /api/v1/rules/pending                    — danh sách quy tắc chờ duyệt
+ *   06  GET  /api/v1/rules?status=pending_approval      — danh sách quy tắc chờ duyệt
  *   07  GET  /api/v1/rules/tags                       — danh sách tags
  *   08  PATCH /api/v1/rules/{id}/tags                 — cập nhật tags của quy tắc
  *   09  DELETE /api/v1/rules/{id}                     — xoá quy tắc (tự dọn dẹp)
@@ -108,7 +108,7 @@ export default function runFlow(users) {
 
   group('06-list-pending', () => {
     const res = http.get(
-      `${BASE_URL}/v1/rules/pending`,
+      `${BASE_URL}/v1/rules?status=pending_approval`,
       authParams(tokens, { tags: { name: 'list_pending_rules' } })
     );
     check(res, {

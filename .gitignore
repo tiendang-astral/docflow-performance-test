@@ -1,4 +1,6 @@
 results/
+results-stress-test/
+results-stress-test-all/
 *.html
 node_modules/
 .env

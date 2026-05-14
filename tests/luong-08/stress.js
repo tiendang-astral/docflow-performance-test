@@ -10,6 +10,7 @@
 import { SharedArray } from 'k6/data';
 import runFlow from '../../flows/luong-08.flow.js';
 import { buildSummary } from '../../lib/report.js';
+import { stages } from '../../lib/stages.js';
 
 const users = new SharedArray('users', function () {
   return JSON.parse(open('../../data/users.json'));
@@ -17,13 +18,7 @@ const users = new SharedArray('users', function () {
 
 export const options = {
   summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
-  stages: [
-    { duration: '2m', target: 20  },
-    { duration: '5m', target: 50  },
-    { duration: '5m', target: 100 },
-    { duration: '5m', target: 200 },
-    { duration: '5m', target: 0   },
-  ],
+  stages: stages.stress,
   thresholds: {
     http_req_failed: ['rate<0.05'],
     http_req_duration: ['p(95)<5000'],

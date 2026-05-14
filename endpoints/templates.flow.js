@@ -7,7 +7,7 @@
  *   03  POST /api/v1/templates                        — tạo template mới
  *   04  GET  /api/v1/templates/{id}                   — xem chi tiết template
  *   05  PUT  /api/v1/templates/{id}                   — cập nhật template
- *   06  GET  /api/v1/templates/pending                — danh sách template chờ duyệt
+ *   06  GET  /api/v1/templates?status=pending_approval  — danh sách template chờ duyệt
  *   07  GET  /api/v1/templates/tags                   — danh sách tags
  *   08  POST /api/v1/templates/{id}/fields            — thêm field vào template
  *   09  GET  /api/v1/templates/{id}/fields            — danh sách fields của template
@@ -108,7 +108,7 @@ export default function runFlow(users) {
 
   group('06-list-pending', () => {
     const res = http.get(
-      `${BASE_URL}/v1/templates/pending`,
+      `${BASE_URL}/v1/templates?status=pending_approval`,
       authParams(tokens, { tags: { name: 'list_pending_templates' } })
     );
     check(res, {
