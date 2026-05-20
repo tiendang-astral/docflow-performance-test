@@ -3,10 +3,11 @@
 #
 # Thứ tự:
 #   1) Login admin → lấy access_token + csrf_token
-#   2) POST /v1/departments     ← data/seed/departments.json
-#   3) POST /v1/users/import    ← data/users-import.csv
-#   4) POST /v1/form-templates  ← data/seed/forms.json
-#   5) POST /v1/rules           ← data/seed/rules.json
+#   2) POST /v1/departments              ← data/seed/departments.json
+#   3) POST /v1/users/import             ← data/users-import.csv
+#   4) POST /v1/templates                ← data/seed/templates.json
+#   5) POST /v1/rules                    ← data/seed/rules.json
+#   6) POST /v1/dossiers + PUT graph     ← data/seed/dossiers.json
 #
 # Yêu cầu: bash, curl, jq
 #
@@ -15,16 +16,18 @@
 #   BASE_URL=http://staging:29002/api ADMIN_USERNAME=admin ADMIN_PASSWORD=secret ./scripts/seed.sh
 #
 # Flags:
-#   --depts-only    chỉ tạo phòng ban
-#   --users-only    chỉ import user
-#   --forms-only    chỉ tạo form (cần department-ids.json đã có)
-#   --rules-only    chỉ tạo rule (cần department-ids.json đã có)
-#   --preview-users chỉ preview CSV import, không tạo thật
+#   --depts-only      chỉ tạo phòng ban
+#   --users-only      chỉ import user
+#   --templates-only  chỉ tạo template (cần department-ids.json đã có)
+#   --rules-only      chỉ tạo rule (cần department-ids.json đã có)
+#   --dossiers-only   chỉ tạo dossier + graph (cần templates + rules đã có)
+#   --preview-users   chỉ preview CSV import, không tạo thật
 
 set -euo pipefail
 
 # ── config ────────────────────────────────────────────────────────────────────
 BASE_URL="${BASE_URL:-http://localhost:29002/api}"
+BASE_URL_V2="${BASE_URL_V2:-$BASE_URL}"   # v2 endpoints (dossier graph) — set khác khi v2 trên port riêng
 ADMIN_USERNAME="${ADMIN_USERNAME:-admin}"
 ADMIN_PASSWORD="${ADMIN_PASSWORD:-admin123}"
 
@@ -38,8 +41,9 @@ for arg in "$@"; do
   case "$arg" in
     --depts-only)    MODE="depts" ;;
     --users-only)    MODE="users" ;;
-    --forms-only)    MODE="forms" ;;
+    --templates-only) MODE="templates" ;;
     --rules-only)    MODE="rules" ;;
+    --dossiers-only) MODE="dossiers" ;;
     --preview-users) MODE="preview-users" ;;
     -h|--help) sed -n '2,22p' "$0"; exit 0 ;;
     *) echo "unknown flag: $arg"; exit 1 ;;
@@ -186,10 +190,10 @@ seed_users() {
   fi
 }
 
-# ── 3) forms ─────────────────────────────────────────────────────────────────
-seed_forms() {
-  section "Forms (data/seed/forms.json)"
-  local input="$SEED_DIR/forms.json"
+# ── 3) templates ─────────────────────────────────────────────────────────────
+seed_templates() {
+  section "Templates (data/seed/templates.json)"
+  local input="$SEED_DIR/templates.json"
   [[ -f "$input" ]] || { fail "missing $input"; exit 1; }
   [[ -f "$DEPT_IDS_FILE" ]] || { fail "missing $DEPT_IDS_FILE — chạy --depts-only trước"; exit 1; }
 
@@ -208,7 +212,7 @@ seed_forms() {
               '.[$idx] | {name, description, tags, department_id: $did, fields}' \
               "$input")
 
-    res=$(curl -sS -w '\n%{http_code}' -X POST "$BASE_URL/v1/form-templates" \
+    res=$(curl -sS -w '\n%{http_code}' -X POST "$BASE_URL/v1/templates" \
           "${auth_headers[@]}" -H 'Content-Type: application/json' -d "$payload")
     status=${res##*$'\n'}; res=${res%$'\n'*}
 
@@ -221,7 +225,7 @@ seed_forms() {
       ((fail_n++))
     fi
   done
-  echo; ok "forms: $ok_n ok, $fail_n fail"
+  echo; ok "templates: $ok_n ok, $fail_n fail"
 }
 
 # ── 4) rules ─────────────────────────────────────────────────────────────────
@@ -261,6 +265,210 @@ seed_rules() {
   echo; ok "rules: $ok_n ok, $fail_n fail"
 }
 
+# ── 5) dossiers + graph ──────────────────────────────────────────────────────
+#
+# Bước này phụ thuộc templates + rules đã có trên server.
+# Mỗi dossier:
+#   1. Resolve template_names → template_ids và rule_names → rule_ids
+#   2. POST /v1/dossiers (tạo dossier, body có template_ids+rule_ids — backup, server có thể bỏ qua)
+#   3. POST /v1/dossiers/{id}/templates?template_id=X cho mỗi template (explicit link)
+#   4. POST /v1/dossiers/{id}/rules?rule_id=X cho mỗi rule (explicit link, admin bypass approval)
+#   5. POST /v2/dossiers/{id}/rules/link với scope_mapping từ edges (rule→[template_ids])
+#   6. PUT  /v2/dossiers/{id}/graph
+seed_dossiers() {
+  section "Dossiers (data/seed/dossiers.json)"
+  local input="$SEED_DIR/dossiers.json"
+  [[ -f "$input" ]] || { fail "missing $input"; exit 1; }
+  [[ -f "$DEPT_IDS_FILE" ]] || { fail "missing $DEPT_IDS_FILE — chạy --depts-only trước"; exit 1; }
+
+  # Pre-fetch name → id maps cho templates & rules
+  ok "fetching template & rule name→id maps..."
+  local tpl_list rule_list
+  tpl_list=$(curl -sS "${auth_headers[@]}" "$BASE_URL/v1/templates?size=100")
+  rule_list=$(curl -sS "${auth_headers[@]}" "$BASE_URL/v1/rules?size=100")
+
+  local tpl_map rule_map
+  tpl_map=$(jq  -c '(.items // .data // []) | map({(.name): .id}) | add // {}' <<<"$tpl_list")
+  rule_map=$(jq -c '(.items // .data // []) | map({(.name): .id}) | add // {}' <<<"$rule_list")
+  ok "tpl_map: $(jq 'length' <<<"$tpl_map") entries, rule_map: $(jq 'length' <<<"$rule_map") entries"
+
+  local count ok_n=0 fail_n=0
+  count=$(jq 'length' "$input")
+  for i in $(seq 0 $((count - 1))); do
+    local dossier name desc tags dept_code dept_id
+    dossier=$(jq -c ".[$i]" "$input")
+    name=$(jq -r '.name'         <<<"$dossier")
+    desc=$(jq -r '.description'  <<<"$dossier")
+    tags=$(jq -c '.tags // []'   <<<"$dossier")
+    dept_code=$(jq -r '.department_code // empty' <<<"$dossier")
+    dept_id=$(jq -r --arg c "$dept_code" '.[$c] // "null"' "$DEPT_IDS_FILE")
+
+    # Map template/rule names → ids (drop những cái không tìm thấy)
+    local tpl_ids rule_ids
+    tpl_ids=$(jq -c --argjson m "$tpl_map" \
+              '.templates | map($m[.] // null) | map(select(. != null))' <<<"$dossier")
+    rule_ids=$(jq -c --argjson m "$rule_map" \
+               '.rules | map($m[.] // null) | map(select(. != null))' <<<"$dossier")
+
+    local t_count r_count
+    t_count=$(jq 'length' <<<"$tpl_ids")
+    r_count=$(jq 'length' <<<"$rule_ids")
+    if [[ "$t_count" == "0" && "$r_count" == "0" ]]; then
+      fail "$name: không resolve được template/rule nào → skip"
+      ((fail_n++))
+      continue
+    fi
+
+    # 1) POST dossier
+    local payload res status dossier_id
+    payload=$(jq -nc \
+      --arg name "$name" --arg desc "$desc" \
+      --argjson tags "$tags" --argjson did "$dept_id" \
+      --argjson tids "$tpl_ids" --argjson rids "$rule_ids" \
+      '{
+        name: $name, description: $desc, tags: $tags,
+        status: "draft", visibility: "private",
+        department_id: (if $did == "null" then null else ($did|tonumber) end),
+        template_ids: $tids, rule_ids: $rids
+      }')
+
+    res=$(curl -sS -w '\n%{http_code}' -X POST "$BASE_URL/v1/dossiers" \
+          "${auth_headers[@]}" -H 'Content-Type: application/json' -d "$payload")
+    status=${res##*$'\n'}; res=${res%$'\n'*}
+
+    if [[ ! "$status" =~ ^2 ]]; then
+      fail "$name → POST HTTP $status: ${res:0:200}"
+      ((fail_n++))
+      continue
+    fi
+    dossier_id=$(jq -r '.id // .data.id // empty' <<<"$res")
+    ok "[$dept_code] $name → dossier_id=$dossier_id"
+
+    # 2) Link templates explicit qua POST /v1/dossiers/{id}/templates?template_id=X
+    local t_link_ok=0
+    for tid in $(jq -r '.[]' <<<"$tpl_ids"); do
+      local tr
+      tr=$(curl -sS -o /dev/null -w '%{http_code}' -X POST \
+        "$BASE_URL/v1/dossiers/$dossier_id/templates?template_id=$tid" \
+        "${auth_headers[@]}")
+      [[ "$tr" =~ ^2 ]] && ((t_link_ok++))
+    done
+    ok "  ├─ templates linked: $t_link_ok/$t_count"
+
+    # 3) Link rules explicit qua POST /v1/dossiers/{id}/rules?rule_id=X
+    #    (admin bypass yêu cầu rule phải approved)
+    local r_link_ok=0
+    for rid in $(jq -r '.[]' <<<"$rule_ids"); do
+      local rr
+      rr=$(curl -sS -o /dev/null -w '%{http_code}' -X POST \
+        "$BASE_URL/v1/dossiers/$dossier_id/rules?rule_id=$rid" \
+        "${auth_headers[@]}")
+      [[ "$rr" =~ ^2 ]] && ((r_link_ok++))
+    done
+    ok "  ├─ rules linked: $r_link_ok/$r_count"
+
+    # 4) Scope mapping: từ edges trong dossiers.json, tính rule → [template_ids]
+    #    Edge [a,b]: a,b là index trong [tpl..., rule...] (concat). Pair tpl-rule mới count.
+    local rule_scopes
+    rule_scopes=$(jq -c --argjson tids "$tpl_ids" --argjson rids "$rule_ids" \
+      '
+      ($tids | length) as $tn |
+      (.edges // [])
+      | map(
+          if   (.[0] < $tn) and (.[1] >= $tn) then { rule_idx: (.[1] - $tn), tpl_id: $tids[.[0]] }
+          elif (.[0] >= $tn) and (.[1] < $tn) then { rule_idx: (.[0] - $tn), tpl_id: $tids[.[1]] }
+          else null end
+        )
+      | map(select(. != null))
+      | group_by(.rule_idx)
+      | map({ rule_id: $rids[.[0].rule_idx], target_template_ids: (map(.tpl_id) | unique) })
+      ' <<<"$dossier")
+
+    local scope_ok=0 scope_count
+    scope_count=$(jq 'length' <<<"$rule_scopes")
+    for j in $(seq 0 $((scope_count - 1))); do
+      local link_body lr
+      link_body=$(jq -c ".[$j]" <<<"$rule_scopes")
+      lr=$(curl -sS -o /dev/null -w '%{http_code}' -X POST \
+        "$BASE_URL_V2/v2/dossiers/$dossier_id/rules/link" \
+        "${auth_headers[@]}" -H 'Content-Type: application/json' -d "$link_body")
+      [[ "$lr" =~ ^2 ]] && ((scope_ok++))
+    done
+    ok "  ├─ scope_mapping: $scope_ok/$scope_count"
+
+    # 5) Build graph_data — layout 2 cột: templates trái, rules phải
+    local edges_def graph
+    edges_def=$(jq -c '.edges // []' <<<"$dossier")
+
+    graph=$(jq -nc \
+      --argjson tids "$tpl_ids" --argjson rids "$rule_ids" \
+      --argjson edges "$edges_def" \
+      '
+      def node_id($k; $kind): "dn_\($kind)_\($k)";
+      {
+        nodes: (
+          ($tids | to_entries | map({
+            id: node_id(.key; "t"),
+            type: "templateNode",
+            position: { x: 300, y: (100 + (.key * 150)) },
+            data: {
+              id: .value, type: "templateNode",
+              label: ("Template " + (.value | tostring))
+            },
+            width: 240, height: 120
+          }))
+          +
+          ($rids | to_entries | map({
+            id: node_id(.key; "r"),
+            type: "ruleNode",
+            position: { x: 720, y: (100 + (.key * 150)) },
+            data: {
+              id: .value, type: "ruleNode",
+              label: ("Rule " + (.value | tostring))
+            },
+            width: 200, height: 60
+          }))
+        ),
+        edges: (
+          $edges | to_entries | map(
+            . as $e |
+            ($e.value[0]) as $a | ($e.value[1]) as $b |
+            ($tids | length) as $tn |
+            ($a < $tn) as $a_is_t | ($b < $tn) as $b_is_t |
+            {
+              id: ("e_" + ($e.key | tostring)),
+              source: (if $a_is_t then "dn_t_\($a)"   else "dn_r_\($a - $tn)" end),
+              target: (if $b_is_t then "dn_t_\($b)"   else "dn_r_\($b - $tn)" end),
+              sourceHandle: null, targetHandle: null,
+              type: "default", animated: true,
+              style: { strokeWidth: 2, stroke: "#64748b" }
+            }
+          )
+        ),
+        settings: {}
+      }')
+
+    # 6) PUT graph — graph_data là JSON STRING (stringified)
+    local graph_payload graph_res graph_status
+    graph_payload=$(jq -nc --argjson g "$graph" '{ graph_data: ($g | tostring) }')
+
+    graph_res=$(curl -sS -w '\n%{http_code}' -X PUT \
+                "$BASE_URL_V2/v2/dossiers/$dossier_id/graph" \
+                "${auth_headers[@]}" -H 'Content-Type: application/json' \
+                -d "$graph_payload")
+    graph_status=${graph_res##*$'\n'}; graph_res=${graph_res%$'\n'*}
+
+    if [[ "$graph_status" =~ ^2 ]]; then
+      ok "  └─ graph → $(jq 'length' <<<"$tpl_ids") templateNode + $(jq 'length' <<<"$rule_ids") ruleNode + $(jq 'length' <<<"$edges_def") edges"
+      ((ok_n++))
+    else
+      fail "  └─ graph PUT HTTP $graph_status: ${graph_res:0:200}"
+      ((fail_n++))
+    fi
+  done
+  echo; ok "dossiers: $ok_n ok, $fail_n fail"
+}
+
 # ── run ──────────────────────────────────────────────────────────────────────
 login
 build_headers
@@ -269,14 +477,16 @@ case "$MODE" in
   all)
     seed_departments
     seed_users
-    seed_forms
+    seed_templates
     seed_rules
+    seed_dossiers
     ;;
   depts)         seed_departments ;;
   users)         seed_users ;;
   preview-users) seed_users 1 ;;
-  forms)         seed_forms ;;
+  templates)     seed_templates ;;
   rules)         seed_rules ;;
+  dossiers)      seed_dossiers ;;
 esac
 
 echo

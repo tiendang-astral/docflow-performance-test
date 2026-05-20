@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Hồ sơ Hợp đồng kinh tế chuẩn",
+    "description": "Quy trình duyệt hợp đồng kinh tế kèm phụ lục",
+    "tags": ["loadtest", "dossier", "pc"],
+    "department_code": "PC",
+    "templates": [
+      "Biểu mẫu Hợp đồng kinh tế",
+      "Biểu mẫu Phụ lục hợp đồng"
+    ],
+    "rules": [
+      "Quy tắc Số tiền hợp đồng dương",
+      "Quy tắc Có chữ ký bên A"
+    ],
+    "edges": [[0, 2], [0, 3], [1, 2]]
+  },
+  {
+    "name": "Hồ sơ Thỏa thuận bảo mật (NDA)",
+    "description": "Quy trình ký kết NDA và biên bản nghiệm thu",
+    "tags": ["loadtest", "dossier", "pc"],
+    "department_code": "PC",
+    "templates": [
+      "Biểu mẫu Thỏa thuận bảo mật",
+      "Biểu mẫu Cam kết tuân thủ",
+      "Biểu mẫu Biên bản nghiệm thu"
+    ],
+    "rules": [
+      "Quy tắc Ngày hiệu lực trước hết hạn",
+      "Quy tắc Có chữ ký bên A",
+      "Quy tắc Điều khoản bảo mật"
+    ],
+    "edges": [[0, 3], [0, 4], [1, 5], [2, 4]]
+  },
+  {
+    "name": "Hồ sơ Hóa đơn GTGT",
+    "description": "Quy trình xử lý hóa đơn giá trị gia tăng",
+    "tags": ["loadtest", "dossier", "kt"],
+    "department_code": "KT",
+    "templates": [
+      "Biểu mẫu Hóa đơn GTGT",
+      "Biểu mẫu Phiếu thu"
+    ],
+    "rules": [
+      "Quy tắc Thuế suất hợp lệ",
+      "Quy tắc Đơn giá lớn hơn 0",
+      "Quy tắc Tổng tiền = số lượng x đơn giá",
+      "Quy tắc Có mã số thuế"
+    ],
+    "edges": [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2]]
+  },
+  {
+    "name": "Hồ sơ Báo cáo tài chính quý",
+    "description": "Báo cáo tài chính kèm bảng kê chi phí",
+    "tags": ["loadtest", "dossier", "kt"],
+    "department_code": "KT",
+    "templates": [
+      "Biểu mẫu Báo cáo tài chính",
+      "Biểu mẫu Bảng kê chi phí",
+      "Biểu mẫu Đề nghị tạm ứng"
+    ],
+    "rules": [
+      "Quy tắc Đơn giá lớn hơn 0",
+      "Quy tắc Ngày lập không tương lai"
+    ],
+    "edges": [[0, 3], [1, 3], [1, 4], [2, 4]]
+  },
+  {
+    "name": "Hồ sơ Tuyển dụng nhân sự",
+    "description": "Hồ sơ nhân sự mới kèm hợp đồng lao động",
+    "tags": ["loadtest", "dossier", "ns"],
+    "department_code": "NS",
+    "templates": [
+      "Biểu mẫu Hồ sơ nhân sự",
+      "Biểu mẫu Hợp đồng lao động"
+    ],
+    "rules": [
+      "Quy tắc Có ảnh chân dung",
+      "Quy tắc CMND/CCCD hợp lệ",
+      "Quy tắc Tuổi lao động hợp lệ",
+      "Quy tắc Bằng cấp đính kèm"
+    ],
+    "edges": [[0, 2], [0, 3], [0, 4], [0, 5], [1, 4]]
+  },
+  {
+    "name": "Hồ sơ Quyết định bổ nhiệm",
+    "description": "Quy trình bổ nhiệm cán bộ kèm đánh giá",
+    "tags": ["loadtest", "dossier", "ns"],
+    "department_code": "NS",
+    "templates": [
+      "Biểu mẫu Quyết định bổ nhiệm",
+      "Biểu mẫu Đánh giá nhân viên"
+    ],
+    "rules": [
+      "Quy tắc Quyết định có chữ ký giám đốc",
+      "Quy tắc Có ảnh chân dung"
+    ],
+    "edges": [[0, 2], [1, 3]]
+  },
+  {
+    "name": "Hồ sơ Bán hàng",
+    "description": "Quy trình bán hàng từ báo giá đến xuất kho",
+    "tags": ["loadtest", "dossier", "kd"],
+    "department_code": "KD",
+    "templates": [
+      "Biểu mẫu Báo giá",
+      "Biểu mẫu Đơn đặt hàng",
+      "Biểu mẫu Hợp đồng bán hàng",
+      "Biểu mẫu Phiếu xuất kho"
+    ],
+    "rules": [
+      "Quy tắc Báo giá có hiệu lực",
+      "Quy tắc Đơn hàng có thông tin khách",
+      "Quy tắc Có chữ ký giao nhận"
+    ],
+    "edges": [[0, 4], [1, 5], [2, 5], [3, 6]]
+  },
+  {
+    "name": "Hồ sơ Đề xuất chiết khấu khách hàng",
+    "description": "Đề xuất chiết khấu kèm bảng giá",
+    "tags": ["loadtest", "dossier", "kd"],
+    "department_code": "KD",
+    "templates": [
+      "Biểu mẫu Đề xuất chiết khấu",
+      "Biểu mẫu Bảng giá sản phẩm"
+    ],
+    "rules": [
+      "Quy tắc Chiết khấu tối đa 20%",
+      "Quy tắc Báo giá đầy đủ thông tin"
+    ],
+    "edges": [[0, 2], [1, 3]]
+  },
+  {
+    "name": "Hồ sơ Triển khai dự án IT",
+    "description": "Quy trình triển khai dự án IT từ đề xuất đến bàn giao",
+    "tags": ["loadtest", "dossier", "it"],
+    "department_code": "IT",
+    "templates": [
+      "Biểu mẫu Đề xuất triển khai dự án",
+      "Biểu mẫu Yêu cầu mua sắm IT",
+      "Biểu mẫu Biên bản bàn giao thiết bị"
+    ],
+    "rules": [
+      "Quy tắc Dự án có ngày kết thúc",
+      "Quy tắc Ngân sách dự án hợp lý",
+      "Quy tắc Thiết bị IT có mã tài sản",
+      "Quy tắc Bàn giao có chữ ký 2 bên"
+    ],
+    "edges": [[0, 3], [0, 4], [1, 5], [2, 5], [2, 6]]
+  },
+  {
+    "name": "Hồ sơ Sự cố IT",
+    "description": "Báo cáo sự cố + yêu cầu cấp quyền",
+    "tags": ["loadtest", "dossier", "it"],
+    "department_code": "IT",
+    "templates": [
+      "Biểu mẫu Báo cáo sự cố",
+      "Biểu mẫu Yêu cầu cấp quyền truy cập",
+      "Biểu mẫu Báo cáo hiệu năng"
+    ],
+    "rules": [
+      "Quy tắc Sự cố có mức độ ưu tiên",
+      "Quy tắc Yêu cầu quyền có phê duyệt"
+    ],
+    "edges": [[0, 3], [1, 4], [2, 3]]
+  }
+]

@@ -14,8 +14,9 @@ data/
 ├── seed/
 │   ├── departments.json        # 5 phòng ban (KT, PC, NS, KD, IT)
 │   ├── users.json              # 500 user (đầy đủ profile + department_code)
-│   ├── forms.json              # 30 biểu mẫu (FormTemplateCreate payload)
+│   ├── templates.json          # 30 biểu mẫu (FormTemplateCreate payload)
 │   ├── rules.json              # 30 quy tắc (RuleCreate payload)
+│   ├── dossiers.json           # 10 hồ sơ (link templates + rules + graph)
 │   └── department-ids.json     # ← do seed.sh sinh ra sau khi tạo phòng ban
 ├── users-import.csv            # 500 user đúng template hệ thống (UTF-8 BOM)
 └── fixtures/
@@ -64,8 +65,11 @@ Thứ tự thực hiện:
 1. **Login** admin → lấy `access_token` + `csrf_token`
 2. **POST `/v1/departments`** ← `data/seed/departments.json` (skip nếu trùng tên)
 3. **POST `/v1/users/import`** ← `data/users-import.csv` (preview trước → import)
-4. **POST `/v1/form-templates`** ← `data/seed/forms.json` (mapping `department_code` → `department_id`)
+4. **POST `/v1/templates`** ← `data/seed/templates.json` (mapping `department_code` → `department_id`)
 5. **POST `/v1/rules`** ← `data/seed/rules.json` (mapping tương tự)
+6. **POST `/v1/dossiers` + PUT `/v2/dossiers/{id}/graph`** ← `data/seed/dossiers.json`
+   - Resolve `templates[]` & `rules[]` (theo name) thành IDs trước khi tạo dossier
+   - Build `graph_data` JSON: 2 cột (templates trái, rules phải) với edges theo định nghĩa
 
 ### 2.4. Chạy từng phần
 
@@ -73,8 +77,9 @@ Thứ tự thực hiện:
 ./scripts/seed.sh --depts-only      # chỉ tạo 5 phòng ban
 ./scripts/seed.sh --users-only      # chỉ import 500 user (preview + import)
 ./scripts/seed.sh --preview-users   # chỉ preview CSV, KHÔNG import thật
-./scripts/seed.sh --forms-only      # chỉ tạo 30 form (cần department-ids.json)
+./scripts/seed.sh --templates-only  # chỉ tạo 30 template (cần department-ids.json)
 ./scripts/seed.sh --rules-only      # chỉ tạo 30 rule (cần department-ids.json)
+./scripts/seed.sh --dossiers-only   # chỉ tạo 10 dossier + graph (cần templates + rules)
 ```
 
 ### 2.5. Chạy với server khác
@@ -83,6 +88,11 @@ Thứ tự thực hiện:
 BASE_URL=http://staging.docflow.local:29002/api \
 ADMIN_USERNAME=admin ADMIN_PASSWORD='your-secret' \
 ./scripts/seed.sh
+
+# Nếu v2 endpoints (dossier graph) trên port riêng:
+BASE_URL=http://localhost:29002/api \
+BASE_URL_V2=http://localhost:29007/api \
+./scripts/seed.sh --dossiers-only
 ```
 
 ### 2.6. Phân bổ dữ liệu mặc định
@@ -93,8 +103,9 @@ ADMIN_USERNAME=admin ADMIN_PASSWORD='your-secret' \
 | Users       | 500      | 470 user / 25 manager / 5 admin, round-robin 5 phòng ban       |
 | Forms       | 30       | 6 form / phòng ban, mỗi form 3-5 field                          |
 | Rules       | 30       | 6 rule / phòng ban, mix `prompt`/`expression`, severity error/warning/info |
+| Dossiers    | 10       | 2 dossier / phòng ban, mỗi dossier link 2-4 template + 2-4 rule + graph |
 
-> ⚠️ **Forms & Rules không check trùng tên** — chạy `seed.sh` 2 lần sẽ tạo bản sao.
+> ⚠️ **Forms / Rules / Dossiers không check trùng tên** — chạy `seed.sh` 2 lần sẽ tạo bản sao.
 > Cần thì xóa thủ công hoặc reset DB trước khi chạy lại.
 
 ---
@@ -181,7 +192,7 @@ Xảy ra khi `jq` đợi stdin. Đảm bảo dùng version mới nhất của `s
 
 ### `missing department-ids.json — chạy --depts-only trước`
 
-`seed.sh --forms-only` và `--rules-only` cần file map `code → dept_id` được sinh ở bước departments. Chạy `./scripts/seed.sh --depts-only` trước.
+`seed.sh --templates-only` và `--rules-only` cần file map `code → dept_id` được sinh ở bước departments. Chạy `./scripts/seed.sh --depts-only` trước.
 
 ### Login failed (HTTP 401)
 
@@ -196,7 +207,7 @@ Sai password → set `ADMIN_PASSWORD` env var rồi chạy lại.
 
 ### Forms/Rules trả về 400 do trùng tên
 
-Hệ thống reject vì `name` đã tồn tại. Xóa thủ công bằng UI hoặc reset DB. Nếu cần re-run idempotent, đổi `name` trong `data/seed/{forms,rules}.json` rồi chạy lại.
+Hệ thống reject vì `name` đã tồn tại. Xóa thủ công bằng UI hoặc reset DB. Nếu cần re-run idempotent, đổi `name` trong `data/seed/{templates,rules}.json` rồi chạy lại.
 
 ### Upload PDF lớn timeout
 
@@ -213,7 +224,7 @@ Tất cả dữ liệu seed là JSON / CSV thuần — chỉnh trực tiếp fil
 
 - Thêm phòng ban: append vào `data/seed/departments.json` (cần field `code`, `name`, `description`).
 - Đổi role split: edit `data/users-import.csv` + `data/seed/users.json`.
-- Thêm field cho biểu mẫu: edit `fields[]` trong `data/seed/forms.json` (xem schema `FormFieldCreate` trong `docs/api.json`).
+- Thêm field cho biểu mẫu: edit `fields[]` trong `data/seed/templates.json` (xem schema `FormFieldCreate` trong `docs/api.json`).
 - Đổi rule condition: edit `condition` trong `data/seed/rules.json`. `rule_type` chỉ có 2 giá trị: `prompt` hoặc `expression`.
 
 PDF fixture: chỉnh blueprint trong [scripts/gen_test_pdfs.py](gen_test_pdfs.py), section `JOBS` để đổi danh sách / target size.
