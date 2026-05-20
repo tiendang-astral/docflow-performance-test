@@ -1,0 +1,27 @@
+[
+  {
+    "code": "KT",
+    "name": "Phòng Kế toán",
+    "description": "Bộ phận Kế toán - Tài chính"
+  },
+  {
+    "code": "PC",
+    "name": "Phòng Pháp chế",
+    "description": "Bộ phận Pháp chế - Tuân thủ"
+  },
+  {
+    "code": "NS",
+    "name": "Phòng Nhân sự",
+    "description": "Bộ phận Nhân sự - Tuyển dụng"
+  },
+  {
+    "code": "KD",
+    "name": "Phòng Kinh doanh",
+    "description": "Bộ phận Kinh doanh - Bán hàng"
+  },
+  {
+    "code": "IT",
+    "name": "Phòng Công nghệ thông tin",
+    "description": "Bộ phận CNTT - Hạ tầng và phần mềm"
+  }
+]

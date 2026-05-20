@@ -1,0 +1,392 @@
+[
+  {
+    "name": "Quy tắc Số tiền hợp đồng dương",
+    "description": "Số tiền không được âm",
+    "tags": [
+      "pc",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "so_tien > 0",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Ngày hiệu lực trước hết hạn",
+    "description": "Ngày hiệu lực phải trước ngày hết hạn",
+    "tags": [
+      "pc",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "ngay_hieu_luc < ngay_het_han",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Có chữ ký bên A",
+    "description": "Hợp đồng phải có chữ ký bên A",
+    "tags": [
+      "pc",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có chữ ký bên A trong tài liệu",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Có chữ ký bên B",
+    "description": "Hợp đồng phải có chữ ký bên B",
+    "tags": [
+      "pc",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có chữ ký bên B trong tài liệu",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Có dấu đỏ công ty",
+    "description": "Văn bản phải có dấu đỏ công ty",
+    "tags": [
+      "pc",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có dấu đỏ tròn của công ty",
+    "rule_type": "prompt",
+    "severity": "warning",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Điều khoản bảo mật",
+    "description": "Hợp đồng phải có điều khoản bảo mật",
+    "tags": [
+      "pc",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có điều khoản bảo mật thông tin",
+    "rule_type": "prompt",
+    "severity": "warning",
+    "department_code": "PC"
+  },
+  {
+    "name": "Quy tắc Thuế suất hợp lệ",
+    "description": "Thuế suất GTGT là 0, 5 hoặc 10",
+    "tags": [
+      "kt",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "thue_suat in [0, 5, 10]",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Đơn giá lớn hơn 0",
+    "description": "Đơn giá phải lớn hơn 0",
+    "tags": [
+      "kt",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "don_gia > 0",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Tổng tiền = số lượng x đơn giá",
+    "description": "Kiểm tra tổng tiền khớp tính toán",
+    "tags": [
+      "kt",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "so_tien == so_luong * don_gia",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Có mã số thuế",
+    "description": "Hóa đơn phải có MST người mua",
+    "tags": [
+      "kt",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có mã số thuế người mua",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Ngày lập không tương lai",
+    "description": "Ngày lập không được sau ngày hôm nay",
+    "tags": [
+      "kt",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "ngay_lap <= today()",
+    "rule_type": "expression",
+    "severity": "warning",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Hóa đơn dưới 20tr không bắt buộc chuyển khoản",
+    "description": "Cảnh báo nếu hóa đơn ≥ 20tr thiếu CK",
+    "tags": [
+      "kt",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "so_tien < 20000000 or da_thanh_toan == true",
+    "rule_type": "expression",
+    "severity": "info",
+    "department_code": "KT"
+  },
+  {
+    "name": "Quy tắc Có ảnh chân dung",
+    "description": "Hồ sơ nhân sự phải có ảnh",
+    "tags": [
+      "ns",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có ảnh chân dung 3x4",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc CMND/CCCD hợp lệ",
+    "description": "Có CMND/CCCD trong hồ sơ",
+    "tags": [
+      "ns",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có CMND hoặc CCCD",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc Ngày nghỉ không quá 30 ngày",
+    "description": "Số ngày nghỉ phép không vượt 30",
+    "tags": [
+      "ns",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "(ngay_het_han - ngay_hieu_luc) <= 30",
+    "rule_type": "expression",
+    "severity": "warning",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc Bằng cấp đính kèm",
+    "description": "Có bằng cấp/chứng chỉ đính kèm",
+    "tags": [
+      "ns",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có scan bằng cấp",
+    "rule_type": "prompt",
+    "severity": "warning",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc Tuổi lao động hợp lệ",
+    "description": "Người lao động ≥ 18 tuổi",
+    "tags": [
+      "ns",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra độ tuổi người lao động từ 18 trở lên",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc Quyết định có chữ ký giám đốc",
+    "description": "Quyết định bổ nhiệm có chữ ký GĐ",
+    "tags": [
+      "ns",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có chữ ký của giám đốc",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "NS"
+  },
+  {
+    "name": "Quy tắc Báo giá có hiệu lực",
+    "description": "Báo giá còn trong hạn hiệu lực",
+    "tags": [
+      "kd",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "ngay_het_han >= today()",
+    "rule_type": "expression",
+    "severity": "warning",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Chiết khấu tối đa 20%",
+    "description": "Chiết khấu không vượt 20%",
+    "tags": [
+      "kd",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "thue_suat <= 20",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Đơn hàng có thông tin khách",
+    "description": "Đơn hàng phải có tên + địa chỉ khách",
+    "tags": [
+      "kd",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có tên và địa chỉ khách hàng",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Số lượng tồn kho dương",
+    "description": "Số lượng xuất ≤ tồn kho",
+    "tags": [
+      "kd",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "so_luong > 0",
+    "rule_type": "expression",
+    "severity": "warning",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Có chữ ký giao nhận",
+    "description": "Phiếu xuất kho có chữ ký 2 bên",
+    "tags": [
+      "kd",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có chữ ký người giao và người nhận",
+    "rule_type": "prompt",
+    "severity": "warning",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Báo giá đầy đủ thông tin",
+    "description": "Báo giá có đủ đơn giá + thuế",
+    "tags": [
+      "kd",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra báo giá có đủ đơn giá và thuế suất",
+    "rule_type": "prompt",
+    "severity": "info",
+    "department_code": "KD"
+  },
+  {
+    "name": "Quy tắc Thiết bị IT có mã tài sản",
+    "description": "Mỗi thiết bị có mã tài sản duy nhất",
+    "tags": [
+      "it",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có mã tài sản trên thiết bị",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "IT"
+  },
+  {
+    "name": "Quy tắc Bàn giao có chữ ký 2 bên",
+    "description": "Biên bản bàn giao có 2 chữ ký",
+    "tags": [
+      "it",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có chữ ký người giao và người nhận",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "IT"
+  },
+  {
+    "name": "Quy tắc Dự án có ngày kết thúc",
+    "description": "Dự án phải có deadline",
+    "tags": [
+      "it",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có ngày kết thúc dự án",
+    "rule_type": "prompt",
+    "severity": "error",
+    "department_code": "IT"
+  },
+  {
+    "name": "Quy tắc Ngân sách dự án hợp lý",
+    "description": "Ngân sách dự án ≤ 1 tỷ",
+    "tags": [
+      "it",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "so_tien <= 1000000000",
+    "rule_type": "expression",
+    "severity": "warning",
+    "department_code": "IT"
+  },
+  {
+    "name": "Quy tắc Yêu cầu quyền có phê duyệt",
+    "description": "Yêu cầu quyền truy cập đã phê duyệt",
+    "tags": [
+      "it",
+      "loadtest",
+      "expression"
+    ],
+    "condition": "da_phe_duyet == true",
+    "rule_type": "expression",
+    "severity": "error",
+    "department_code": "IT"
+  },
+  {
+    "name": "Quy tắc Sự cố có mức độ ưu tiên",
+    "description": "Báo cáo sự cố ghi rõ mức độ",
+    "tags": [
+      "it",
+      "loadtest",
+      "prompt"
+    ],
+    "condition": "Kiểm tra có ghi rõ mức độ ưu tiên (P0/P1/P2/P3)",
+    "rule_type": "prompt",
+    "severity": "warning",
+    "department_code": "IT"
+  }
+]

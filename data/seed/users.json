@@ -1,0 +1,4502 @@
+[
+  {
+    "username": "lt.user.001",
+    "email": "lt.user.001@docflow.test",
+    "full_name": "Phạm Văn Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.002",
+    "email": "lt.user.002@docflow.test",
+    "full_name": "Vũ Hoài Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.003",
+    "email": "lt.user.003@docflow.test",
+    "full_name": "Phạm Hữu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.004",
+    "email": "lt.user.004@docflow.test",
+    "full_name": "Trần Văn Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.005",
+    "email": "lt.user.005@docflow.test",
+    "full_name": "Phan Hoài Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.006",
+    "email": "lt.user.006@docflow.test",
+    "full_name": "Phan Phương Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.007",
+    "email": "lt.user.007@docflow.test",
+    "full_name": "Dương Ngọc An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.008",
+    "email": "lt.user.008@docflow.test",
+    "full_name": "Huỳnh Phương Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.009",
+    "email": "lt.user.009@docflow.test",
+    "full_name": "Võ Quang Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.010",
+    "email": "lt.user.010@docflow.test",
+    "full_name": "Bùi Đức Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.011",
+    "email": "lt.user.011@docflow.test",
+    "full_name": "Hồ Đức Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.012",
+    "email": "lt.user.012@docflow.test",
+    "full_name": "Đỗ Ngọc Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.013",
+    "email": "lt.user.013@docflow.test",
+    "full_name": "Dương Đức Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.014",
+    "email": "lt.user.014@docflow.test",
+    "full_name": "Lê Thu Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.015",
+    "email": "lt.user.015@docflow.test",
+    "full_name": "Phan Hữu Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.016",
+    "email": "lt.user.016@docflow.test",
+    "full_name": "Vũ Thu Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.017",
+    "email": "lt.user.017@docflow.test",
+    "full_name": "Vũ Đức Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.018",
+    "email": "lt.user.018@docflow.test",
+    "full_name": "Võ Tuấn Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.019",
+    "email": "lt.user.019@docflow.test",
+    "full_name": "Huỳnh Bảo Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.020",
+    "email": "lt.user.020@docflow.test",
+    "full_name": "Phan Ngọc Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.021",
+    "email": "lt.user.021@docflow.test",
+    "full_name": "Huỳnh Hoài Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.022",
+    "email": "lt.user.022@docflow.test",
+    "full_name": "Dương Anh Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.023",
+    "email": "lt.user.023@docflow.test",
+    "full_name": "Vũ Hồng Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.024",
+    "email": "lt.user.024@docflow.test",
+    "full_name": "Vũ Thị Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.025",
+    "email": "lt.user.025@docflow.test",
+    "full_name": "Hồ Ngọc Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.026",
+    "email": "lt.user.026@docflow.test",
+    "full_name": "Phan Hồng Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.027",
+    "email": "lt.user.027@docflow.test",
+    "full_name": "Lý Anh Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.028",
+    "email": "lt.user.028@docflow.test",
+    "full_name": "Hoàng Ngọc Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.029",
+    "email": "lt.user.029@docflow.test",
+    "full_name": "Vũ Ngọc Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.030",
+    "email": "lt.user.030@docflow.test",
+    "full_name": "Hồ Bảo Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.031",
+    "email": "lt.user.031@docflow.test",
+    "full_name": "Hoàng Mai Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.032",
+    "email": "lt.user.032@docflow.test",
+    "full_name": "Trần Đức Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.033",
+    "email": "lt.user.033@docflow.test",
+    "full_name": "Huỳnh Phương Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.034",
+    "email": "lt.user.034@docflow.test",
+    "full_name": "Hồ Anh Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.035",
+    "email": "lt.user.035@docflow.test",
+    "full_name": "Võ Văn Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.036",
+    "email": "lt.user.036@docflow.test",
+    "full_name": "Võ Hồng Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.037",
+    "email": "lt.user.037@docflow.test",
+    "full_name": "Đặng Phương Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.038",
+    "email": "lt.user.038@docflow.test",
+    "full_name": "Dương Văn Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.039",
+    "email": "lt.user.039@docflow.test",
+    "full_name": "Huỳnh Đức Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.040",
+    "email": "lt.user.040@docflow.test",
+    "full_name": "Phan Quang Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.041",
+    "email": "lt.user.041@docflow.test",
+    "full_name": "Huỳnh Văn Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.042",
+    "email": "lt.user.042@docflow.test",
+    "full_name": "Lý Văn Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.043",
+    "email": "lt.user.043@docflow.test",
+    "full_name": "Đỗ Thu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.044",
+    "email": "lt.user.044@docflow.test",
+    "full_name": "Trần Hoài Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.045",
+    "email": "lt.user.045@docflow.test",
+    "full_name": "Lê Mai Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.046",
+    "email": "lt.user.046@docflow.test",
+    "full_name": "Hoàng Quang Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.047",
+    "email": "lt.user.047@docflow.test",
+    "full_name": "Huỳnh Ngọc Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.048",
+    "email": "lt.user.048@docflow.test",
+    "full_name": "Phan Thanh Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.049",
+    "email": "lt.user.049@docflow.test",
+    "full_name": "Hồ Bảo Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.050",
+    "email": "lt.user.050@docflow.test",
+    "full_name": "Dương Đức Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.051",
+    "email": "lt.user.051@docflow.test",
+    "full_name": "Vũ Hữu Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.052",
+    "email": "lt.user.052@docflow.test",
+    "full_name": "Nguyễn Hoài Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.053",
+    "email": "lt.user.053@docflow.test",
+    "full_name": "Nguyễn Hữu Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.054",
+    "email": "lt.user.054@docflow.test",
+    "full_name": "Vũ Hữu Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.055",
+    "email": "lt.user.055@docflow.test",
+    "full_name": "Bùi Hữu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.056",
+    "email": "lt.user.056@docflow.test",
+    "full_name": "Võ Mai Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.057",
+    "email": "lt.user.057@docflow.test",
+    "full_name": "Hoàng Mai Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.058",
+    "email": "lt.user.058@docflow.test",
+    "full_name": "Lý Phương Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.059",
+    "email": "lt.user.059@docflow.test",
+    "full_name": "Phạm Đức Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.060",
+    "email": "lt.user.060@docflow.test",
+    "full_name": "Đỗ Phương Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.061",
+    "email": "lt.user.061@docflow.test",
+    "full_name": "Dương Thị Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.062",
+    "email": "lt.user.062@docflow.test",
+    "full_name": "Trần Anh Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.063",
+    "email": "lt.user.063@docflow.test",
+    "full_name": "Phạm Hoài Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.064",
+    "email": "lt.user.064@docflow.test",
+    "full_name": "Phan Tuấn Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.065",
+    "email": "lt.user.065@docflow.test",
+    "full_name": "Ngô Minh Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.066",
+    "email": "lt.user.066@docflow.test",
+    "full_name": "Dương Hoài Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.067",
+    "email": "lt.user.067@docflow.test",
+    "full_name": "Dương Đức Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.068",
+    "email": "lt.user.068@docflow.test",
+    "full_name": "Nguyễn Hữu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.069",
+    "email": "lt.user.069@docflow.test",
+    "full_name": "Huỳnh Phương Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.070",
+    "email": "lt.user.070@docflow.test",
+    "full_name": "Lý Thanh Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.071",
+    "email": "lt.user.071@docflow.test",
+    "full_name": "Trần Minh Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.072",
+    "email": "lt.user.072@docflow.test",
+    "full_name": "Nguyễn Anh Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.073",
+    "email": "lt.user.073@docflow.test",
+    "full_name": "Dương Thu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.074",
+    "email": "lt.user.074@docflow.test",
+    "full_name": "Lý Quang Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.075",
+    "email": "lt.user.075@docflow.test",
+    "full_name": "Đặng Thanh Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.076",
+    "email": "lt.user.076@docflow.test",
+    "full_name": "Trần Hồng Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.077",
+    "email": "lt.user.077@docflow.test",
+    "full_name": "Trần Mai Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.078",
+    "email": "lt.user.078@docflow.test",
+    "full_name": "Trần Hữu Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.079",
+    "email": "lt.user.079@docflow.test",
+    "full_name": "Lê Hữu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.080",
+    "email": "lt.user.080@docflow.test",
+    "full_name": "Hồ Đức Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.081",
+    "email": "lt.user.081@docflow.test",
+    "full_name": "Trần Hữu Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.082",
+    "email": "lt.user.082@docflow.test",
+    "full_name": "Bùi Ngọc Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.083",
+    "email": "lt.user.083@docflow.test",
+    "full_name": "Bùi Hoài Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.084",
+    "email": "lt.user.084@docflow.test",
+    "full_name": "Hồ Quang Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.085",
+    "email": "lt.user.085@docflow.test",
+    "full_name": "Dương Hồng Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.086",
+    "email": "lt.user.086@docflow.test",
+    "full_name": "Nguyễn Tuấn Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.087",
+    "email": "lt.user.087@docflow.test",
+    "full_name": "Lê Thanh Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.088",
+    "email": "lt.user.088@docflow.test",
+    "full_name": "Hoàng Bảo Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.089",
+    "email": "lt.user.089@docflow.test",
+    "full_name": "Vũ Bảo Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.090",
+    "email": "lt.user.090@docflow.test",
+    "full_name": "Huỳnh Tuấn Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.091",
+    "email": "lt.user.091@docflow.test",
+    "full_name": "Nguyễn Thu Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.092",
+    "email": "lt.user.092@docflow.test",
+    "full_name": "Hoàng Ngọc Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.093",
+    "email": "lt.user.093@docflow.test",
+    "full_name": "Phạm Quang Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.094",
+    "email": "lt.user.094@docflow.test",
+    "full_name": "Đặng Thanh Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.095",
+    "email": "lt.user.095@docflow.test",
+    "full_name": "Phan Ngọc Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.096",
+    "email": "lt.user.096@docflow.test",
+    "full_name": "Võ Thị Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.097",
+    "email": "lt.user.097@docflow.test",
+    "full_name": "Ngô Ngọc Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.098",
+    "email": "lt.user.098@docflow.test",
+    "full_name": "Nguyễn Hồng Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.099",
+    "email": "lt.user.099@docflow.test",
+    "full_name": "Võ Minh Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.100",
+    "email": "lt.user.100@docflow.test",
+    "full_name": "Ngô Văn Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.101",
+    "email": "lt.user.101@docflow.test",
+    "full_name": "Lê Quang Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.102",
+    "email": "lt.user.102@docflow.test",
+    "full_name": "Đỗ Quang Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.103",
+    "email": "lt.user.103@docflow.test",
+    "full_name": "Hoàng Thị Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.104",
+    "email": "lt.user.104@docflow.test",
+    "full_name": "Đỗ Thị Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.105",
+    "email": "lt.user.105@docflow.test",
+    "full_name": "Phan Hoài Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.106",
+    "email": "lt.user.106@docflow.test",
+    "full_name": "Đỗ Phương Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.107",
+    "email": "lt.user.107@docflow.test",
+    "full_name": "Vũ Minh Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.108",
+    "email": "lt.user.108@docflow.test",
+    "full_name": "Ngô Văn Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.109",
+    "email": "lt.user.109@docflow.test",
+    "full_name": "Bùi Phương Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.110",
+    "email": "lt.user.110@docflow.test",
+    "full_name": "Võ Minh Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.111",
+    "email": "lt.user.111@docflow.test",
+    "full_name": "Hồ Thị Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.112",
+    "email": "lt.user.112@docflow.test",
+    "full_name": "Vũ Thanh Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.113",
+    "email": "lt.user.113@docflow.test",
+    "full_name": "Đỗ Thu Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.114",
+    "email": "lt.user.114@docflow.test",
+    "full_name": "Vũ Văn Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.115",
+    "email": "lt.user.115@docflow.test",
+    "full_name": "Hồ Hồng Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.116",
+    "email": "lt.user.116@docflow.test",
+    "full_name": "Lê Ngọc Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.117",
+    "email": "lt.user.117@docflow.test",
+    "full_name": "Hồ Hồng Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.118",
+    "email": "lt.user.118@docflow.test",
+    "full_name": "Phạm Ngọc Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.119",
+    "email": "lt.user.119@docflow.test",
+    "full_name": "Võ Thị Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.120",
+    "email": "lt.user.120@docflow.test",
+    "full_name": "Ngô Bảo Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.121",
+    "email": "lt.user.121@docflow.test",
+    "full_name": "Ngô Đức Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.122",
+    "email": "lt.user.122@docflow.test",
+    "full_name": "Phan Ngọc Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.123",
+    "email": "lt.user.123@docflow.test",
+    "full_name": "Ngô Văn Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.124",
+    "email": "lt.user.124@docflow.test",
+    "full_name": "Đỗ Phương Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.125",
+    "email": "lt.user.125@docflow.test",
+    "full_name": "Bùi Hồng Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.126",
+    "email": "lt.user.126@docflow.test",
+    "full_name": "Đặng Thu Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.127",
+    "email": "lt.user.127@docflow.test",
+    "full_name": "Bùi Anh Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.128",
+    "email": "lt.user.128@docflow.test",
+    "full_name": "Hoàng Thanh Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.129",
+    "email": "lt.user.129@docflow.test",
+    "full_name": "Hồ Minh Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.130",
+    "email": "lt.user.130@docflow.test",
+    "full_name": "Hồ Văn Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.131",
+    "email": "lt.user.131@docflow.test",
+    "full_name": "Đặng Thanh Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.132",
+    "email": "lt.user.132@docflow.test",
+    "full_name": "Bùi Tuấn Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.133",
+    "email": "lt.user.133@docflow.test",
+    "full_name": "Dương Thanh Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.134",
+    "email": "lt.user.134@docflow.test",
+    "full_name": "Huỳnh Hữu Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.135",
+    "email": "lt.user.135@docflow.test",
+    "full_name": "Bùi Hữu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.136",
+    "email": "lt.user.136@docflow.test",
+    "full_name": "Đặng Hoài Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.137",
+    "email": "lt.user.137@docflow.test",
+    "full_name": "Hoàng Văn Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.138",
+    "email": "lt.user.138@docflow.test",
+    "full_name": "Vũ Mai Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.139",
+    "email": "lt.user.139@docflow.test",
+    "full_name": "Dương Phương Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.140",
+    "email": "lt.user.140@docflow.test",
+    "full_name": "Hồ Mai Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.141",
+    "email": "lt.user.141@docflow.test",
+    "full_name": "Vũ Quang An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.142",
+    "email": "lt.user.142@docflow.test",
+    "full_name": "Phạm Phương Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.143",
+    "email": "lt.user.143@docflow.test",
+    "full_name": "Huỳnh Tuấn Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.144",
+    "email": "lt.user.144@docflow.test",
+    "full_name": "Vũ Đức Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.145",
+    "email": "lt.user.145@docflow.test",
+    "full_name": "Hoàng Tuấn Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.146",
+    "email": "lt.user.146@docflow.test",
+    "full_name": "Dương Phương Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.147",
+    "email": "lt.user.147@docflow.test",
+    "full_name": "Huỳnh Mai Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.148",
+    "email": "lt.user.148@docflow.test",
+    "full_name": "Võ Hoài Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.149",
+    "email": "lt.user.149@docflow.test",
+    "full_name": "Lý Hoài Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.150",
+    "email": "lt.user.150@docflow.test",
+    "full_name": "Dương Hữu Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.151",
+    "email": "lt.user.151@docflow.test",
+    "full_name": "Vũ Ngọc Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.152",
+    "email": "lt.user.152@docflow.test",
+    "full_name": "Bùi Hữu Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.153",
+    "email": "lt.user.153@docflow.test",
+    "full_name": "Hoàng Hoài Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.154",
+    "email": "lt.user.154@docflow.test",
+    "full_name": "Hoàng Thanh Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.155",
+    "email": "lt.user.155@docflow.test",
+    "full_name": "Ngô Phương Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.156",
+    "email": "lt.user.156@docflow.test",
+    "full_name": "Dương Phương Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.157",
+    "email": "lt.user.157@docflow.test",
+    "full_name": "Phan Phương Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.158",
+    "email": "lt.user.158@docflow.test",
+    "full_name": "Nguyễn Anh Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.159",
+    "email": "lt.user.159@docflow.test",
+    "full_name": "Nguyễn Bảo Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.160",
+    "email": "lt.user.160@docflow.test",
+    "full_name": "Hồ Phương Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.161",
+    "email": "lt.user.161@docflow.test",
+    "full_name": "Lý Hoài Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.162",
+    "email": "lt.user.162@docflow.test",
+    "full_name": "Ngô Mai Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.163",
+    "email": "lt.user.163@docflow.test",
+    "full_name": "Hồ Hồng Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.164",
+    "email": "lt.user.164@docflow.test",
+    "full_name": "Huỳnh Tuấn Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.165",
+    "email": "lt.user.165@docflow.test",
+    "full_name": "Nguyễn Anh Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.166",
+    "email": "lt.user.166@docflow.test",
+    "full_name": "Lê Phương Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.167",
+    "email": "lt.user.167@docflow.test",
+    "full_name": "Dương Minh Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.168",
+    "email": "lt.user.168@docflow.test",
+    "full_name": "Võ Anh Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.169",
+    "email": "lt.user.169@docflow.test",
+    "full_name": "Phan Tuấn Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.170",
+    "email": "lt.user.170@docflow.test",
+    "full_name": "Bùi Anh Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.171",
+    "email": "lt.user.171@docflow.test",
+    "full_name": "Ngô Ngọc Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.172",
+    "email": "lt.user.172@docflow.test",
+    "full_name": "Lý Văn Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.173",
+    "email": "lt.user.173@docflow.test",
+    "full_name": "Đỗ Hoài Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.174",
+    "email": "lt.user.174@docflow.test",
+    "full_name": "Trần Văn Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.175",
+    "email": "lt.user.175@docflow.test",
+    "full_name": "Phan Văn Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.176",
+    "email": "lt.user.176@docflow.test",
+    "full_name": "Vũ Quang Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.177",
+    "email": "lt.user.177@docflow.test",
+    "full_name": "Phạm Thanh Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.178",
+    "email": "lt.user.178@docflow.test",
+    "full_name": "Võ Bảo Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.179",
+    "email": "lt.user.179@docflow.test",
+    "full_name": "Phạm Minh Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.180",
+    "email": "lt.user.180@docflow.test",
+    "full_name": "Phạm Văn Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.181",
+    "email": "lt.user.181@docflow.test",
+    "full_name": "Hồ Anh Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.182",
+    "email": "lt.user.182@docflow.test",
+    "full_name": "Lê Hoài Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.183",
+    "email": "lt.user.183@docflow.test",
+    "full_name": "Đặng Đức Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.184",
+    "email": "lt.user.184@docflow.test",
+    "full_name": "Đỗ Phương Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.185",
+    "email": "lt.user.185@docflow.test",
+    "full_name": "Lê Hồng An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.186",
+    "email": "lt.user.186@docflow.test",
+    "full_name": "Ngô Mai Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.187",
+    "email": "lt.user.187@docflow.test",
+    "full_name": "Ngô Bảo Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.188",
+    "email": "lt.user.188@docflow.test",
+    "full_name": "Hoàng Phương Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.189",
+    "email": "lt.user.189@docflow.test",
+    "full_name": "Võ Mai Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.190",
+    "email": "lt.user.190@docflow.test",
+    "full_name": "Ngô Ngọc Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.191",
+    "email": "lt.user.191@docflow.test",
+    "full_name": "Vũ Hữu Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.192",
+    "email": "lt.user.192@docflow.test",
+    "full_name": "Dương Hoài Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.193",
+    "email": "lt.user.193@docflow.test",
+    "full_name": "Hồ Hồng Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.194",
+    "email": "lt.user.194@docflow.test",
+    "full_name": "Lý Hồng Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.195",
+    "email": "lt.user.195@docflow.test",
+    "full_name": "Lý Thanh Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.196",
+    "email": "lt.user.196@docflow.test",
+    "full_name": "Võ Hồng Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.197",
+    "email": "lt.user.197@docflow.test",
+    "full_name": "Võ Văn Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.198",
+    "email": "lt.user.198@docflow.test",
+    "full_name": "Lê Hoài Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.199",
+    "email": "lt.user.199@docflow.test",
+    "full_name": "Lý Hoài Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.200",
+    "email": "lt.user.200@docflow.test",
+    "full_name": "Lý Tuấn Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.201",
+    "email": "lt.user.201@docflow.test",
+    "full_name": "Lê Thu Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.202",
+    "email": "lt.user.202@docflow.test",
+    "full_name": "Hồ Hoài Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.203",
+    "email": "lt.user.203@docflow.test",
+    "full_name": "Đỗ Mai Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.204",
+    "email": "lt.user.204@docflow.test",
+    "full_name": "Ngô Hồng Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.205",
+    "email": "lt.user.205@docflow.test",
+    "full_name": "Dương Ngọc Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.206",
+    "email": "lt.user.206@docflow.test",
+    "full_name": "Võ Hoài Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.207",
+    "email": "lt.user.207@docflow.test",
+    "full_name": "Phan Hồng Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.208",
+    "email": "lt.user.208@docflow.test",
+    "full_name": "Huỳnh Thanh Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.209",
+    "email": "lt.user.209@docflow.test",
+    "full_name": "Lý Ngọc Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.210",
+    "email": "lt.user.210@docflow.test",
+    "full_name": "Phạm Thanh Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.211",
+    "email": "lt.user.211@docflow.test",
+    "full_name": "Vũ Bảo Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.212",
+    "email": "lt.user.212@docflow.test",
+    "full_name": "Đặng Văn Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.213",
+    "email": "lt.user.213@docflow.test",
+    "full_name": "Võ Thị Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.214",
+    "email": "lt.user.214@docflow.test",
+    "full_name": "Đặng Quang Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.215",
+    "email": "lt.user.215@docflow.test",
+    "full_name": "Phạm Văn Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.216",
+    "email": "lt.user.216@docflow.test",
+    "full_name": "Lý Mai Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.217",
+    "email": "lt.user.217@docflow.test",
+    "full_name": "Bùi Minh Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.218",
+    "email": "lt.user.218@docflow.test",
+    "full_name": "Võ Mai Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.219",
+    "email": "lt.user.219@docflow.test",
+    "full_name": "Lê Anh Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.220",
+    "email": "lt.user.220@docflow.test",
+    "full_name": "Lê Thị Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.221",
+    "email": "lt.user.221@docflow.test",
+    "full_name": "Hoàng Thu Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.222",
+    "email": "lt.user.222@docflow.test",
+    "full_name": "Vũ Đức Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.223",
+    "email": "lt.user.223@docflow.test",
+    "full_name": "Vũ Anh Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.224",
+    "email": "lt.user.224@docflow.test",
+    "full_name": "Dương Thu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.225",
+    "email": "lt.user.225@docflow.test",
+    "full_name": "Đặng Thị Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.226",
+    "email": "lt.user.226@docflow.test",
+    "full_name": "Phan Thanh Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.227",
+    "email": "lt.user.227@docflow.test",
+    "full_name": "Lê Minh Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.228",
+    "email": "lt.user.228@docflow.test",
+    "full_name": "Huỳnh Hữu Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.229",
+    "email": "lt.user.229@docflow.test",
+    "full_name": "Nguyễn Phương Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.230",
+    "email": "lt.user.230@docflow.test",
+    "full_name": "Lý Thu Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.231",
+    "email": "lt.user.231@docflow.test",
+    "full_name": "Vũ Thu Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.232",
+    "email": "lt.user.232@docflow.test",
+    "full_name": "Dương Hữu Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.233",
+    "email": "lt.user.233@docflow.test",
+    "full_name": "Võ Thanh Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.234",
+    "email": "lt.user.234@docflow.test",
+    "full_name": "Phạm Hoài Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.235",
+    "email": "lt.user.235@docflow.test",
+    "full_name": "Võ Quang Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.236",
+    "email": "lt.user.236@docflow.test",
+    "full_name": "Trần Minh Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.237",
+    "email": "lt.user.237@docflow.test",
+    "full_name": "Đặng Tuấn Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.238",
+    "email": "lt.user.238@docflow.test",
+    "full_name": "Dương Thu Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.239",
+    "email": "lt.user.239@docflow.test",
+    "full_name": "Võ Mai Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.240",
+    "email": "lt.user.240@docflow.test",
+    "full_name": "Lê Thị Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.241",
+    "email": "lt.user.241@docflow.test",
+    "full_name": "Bùi Ngọc Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.242",
+    "email": "lt.user.242@docflow.test",
+    "full_name": "Lê Hoài Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.243",
+    "email": "lt.user.243@docflow.test",
+    "full_name": "Võ Thị Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.244",
+    "email": "lt.user.244@docflow.test",
+    "full_name": "Lý Tuấn Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.245",
+    "email": "lt.user.245@docflow.test",
+    "full_name": "Huỳnh Phương Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.246",
+    "email": "lt.user.246@docflow.test",
+    "full_name": "Lê Mai Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.247",
+    "email": "lt.user.247@docflow.test",
+    "full_name": "Ngô Hồng Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.248",
+    "email": "lt.user.248@docflow.test",
+    "full_name": "Phạm Minh Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.249",
+    "email": "lt.user.249@docflow.test",
+    "full_name": "Ngô Mai Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.250",
+    "email": "lt.user.250@docflow.test",
+    "full_name": "Hồ Thị Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.251",
+    "email": "lt.user.251@docflow.test",
+    "full_name": "Lê Hồng Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.252",
+    "email": "lt.user.252@docflow.test",
+    "full_name": "Bùi Đức Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.253",
+    "email": "lt.user.253@docflow.test",
+    "full_name": "Nguyễn Tuấn Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.254",
+    "email": "lt.user.254@docflow.test",
+    "full_name": "Trần Thanh Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.255",
+    "email": "lt.user.255@docflow.test",
+    "full_name": "Lý Tuấn Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.256",
+    "email": "lt.user.256@docflow.test",
+    "full_name": "Phan Ngọc Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.257",
+    "email": "lt.user.257@docflow.test",
+    "full_name": "Đặng Tuấn Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.258",
+    "email": "lt.user.258@docflow.test",
+    "full_name": "Phạm Văn Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.259",
+    "email": "lt.user.259@docflow.test",
+    "full_name": "Huỳnh Thu An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.260",
+    "email": "lt.user.260@docflow.test",
+    "full_name": "Ngô Hữu Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.261",
+    "email": "lt.user.261@docflow.test",
+    "full_name": "Phạm Tuấn Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.262",
+    "email": "lt.user.262@docflow.test",
+    "full_name": "Hoàng Mai Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.263",
+    "email": "lt.user.263@docflow.test",
+    "full_name": "Võ Phương Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.264",
+    "email": "lt.user.264@docflow.test",
+    "full_name": "Lý Hoài Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.265",
+    "email": "lt.user.265@docflow.test",
+    "full_name": "Hoàng Anh Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.266",
+    "email": "lt.user.266@docflow.test",
+    "full_name": "Hoàng Hữu Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.267",
+    "email": "lt.user.267@docflow.test",
+    "full_name": "Ngô Hồng Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.268",
+    "email": "lt.user.268@docflow.test",
+    "full_name": "Nguyễn Thu Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.269",
+    "email": "lt.user.269@docflow.test",
+    "full_name": "Lý Quang Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.270",
+    "email": "lt.user.270@docflow.test",
+    "full_name": "Lý Bảo Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.271",
+    "email": "lt.user.271@docflow.test",
+    "full_name": "Hồ Tuấn Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.272",
+    "email": "lt.user.272@docflow.test",
+    "full_name": "Phan Hoài Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.273",
+    "email": "lt.user.273@docflow.test",
+    "full_name": "Vũ Phương Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.274",
+    "email": "lt.user.274@docflow.test",
+    "full_name": "Bùi Mai Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.275",
+    "email": "lt.user.275@docflow.test",
+    "full_name": "Hồ Quang Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.276",
+    "email": "lt.user.276@docflow.test",
+    "full_name": "Trần Quang Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.277",
+    "email": "lt.user.277@docflow.test",
+    "full_name": "Phạm Tuấn Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.278",
+    "email": "lt.user.278@docflow.test",
+    "full_name": "Dương Văn Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.279",
+    "email": "lt.user.279@docflow.test",
+    "full_name": "Ngô Quang Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.280",
+    "email": "lt.user.280@docflow.test",
+    "full_name": "Lý Ngọc Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.281",
+    "email": "lt.user.281@docflow.test",
+    "full_name": "Hồ Hữu Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.282",
+    "email": "lt.user.282@docflow.test",
+    "full_name": "Hồ Hồng Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.283",
+    "email": "lt.user.283@docflow.test",
+    "full_name": "Trần Hữu Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.284",
+    "email": "lt.user.284@docflow.test",
+    "full_name": "Đặng Hoài Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.285",
+    "email": "lt.user.285@docflow.test",
+    "full_name": "Ngô Đức Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.286",
+    "email": "lt.user.286@docflow.test",
+    "full_name": "Dương Minh Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.287",
+    "email": "lt.user.287@docflow.test",
+    "full_name": "Nguyễn Thị Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.288",
+    "email": "lt.user.288@docflow.test",
+    "full_name": "Trần Thu Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.289",
+    "email": "lt.user.289@docflow.test",
+    "full_name": "Đỗ Phương Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.290",
+    "email": "lt.user.290@docflow.test",
+    "full_name": "Vũ Phương Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.291",
+    "email": "lt.user.291@docflow.test",
+    "full_name": "Huỳnh Minh Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.292",
+    "email": "lt.user.292@docflow.test",
+    "full_name": "Hồ Hoài Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.293",
+    "email": "lt.user.293@docflow.test",
+    "full_name": "Hoàng Hoài Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.294",
+    "email": "lt.user.294@docflow.test",
+    "full_name": "Võ Tuấn Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.295",
+    "email": "lt.user.295@docflow.test",
+    "full_name": "Nguyễn Tuấn Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.296",
+    "email": "lt.user.296@docflow.test",
+    "full_name": "Huỳnh Hữu Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.297",
+    "email": "lt.user.297@docflow.test",
+    "full_name": "Đỗ Thu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.298",
+    "email": "lt.user.298@docflow.test",
+    "full_name": "Võ Tuấn Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.299",
+    "email": "lt.user.299@docflow.test",
+    "full_name": "Phan Anh Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.300",
+    "email": "lt.user.300@docflow.test",
+    "full_name": "Phạm Hoài Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.301",
+    "email": "lt.user.301@docflow.test",
+    "full_name": "Đỗ Thu Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.302",
+    "email": "lt.user.302@docflow.test",
+    "full_name": "Nguyễn Anh Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.303",
+    "email": "lt.user.303@docflow.test",
+    "full_name": "Nguyễn Thị Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.304",
+    "email": "lt.user.304@docflow.test",
+    "full_name": "Đặng Hoài Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.305",
+    "email": "lt.user.305@docflow.test",
+    "full_name": "Vũ Thanh Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.306",
+    "email": "lt.user.306@docflow.test",
+    "full_name": "Hoàng Đức Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.307",
+    "email": "lt.user.307@docflow.test",
+    "full_name": "Đặng Tuấn Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.308",
+    "email": "lt.user.308@docflow.test",
+    "full_name": "Đỗ Quang Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.309",
+    "email": "lt.user.309@docflow.test",
+    "full_name": "Đặng Hồng Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.310",
+    "email": "lt.user.310@docflow.test",
+    "full_name": "Huỳnh Thanh Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.311",
+    "email": "lt.user.311@docflow.test",
+    "full_name": "Đỗ Ngọc Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.312",
+    "email": "lt.user.312@docflow.test",
+    "full_name": "Võ Mai Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.313",
+    "email": "lt.user.313@docflow.test",
+    "full_name": "Bùi Đức Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.314",
+    "email": "lt.user.314@docflow.test",
+    "full_name": "Lê Quang Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.315",
+    "email": "lt.user.315@docflow.test",
+    "full_name": "Hồ Bảo Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.316",
+    "email": "lt.user.316@docflow.test",
+    "full_name": "Hồ Văn Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.317",
+    "email": "lt.user.317@docflow.test",
+    "full_name": "Phạm Tuấn Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.318",
+    "email": "lt.user.318@docflow.test",
+    "full_name": "Võ Anh Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.319",
+    "email": "lt.user.319@docflow.test",
+    "full_name": "Phạm Hoài Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.320",
+    "email": "lt.user.320@docflow.test",
+    "full_name": "Nguyễn Hồng Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.321",
+    "email": "lt.user.321@docflow.test",
+    "full_name": "Lê Tuấn Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.322",
+    "email": "lt.user.322@docflow.test",
+    "full_name": "Ngô Đức Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.323",
+    "email": "lt.user.323@docflow.test",
+    "full_name": "Trần Thị Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.324",
+    "email": "lt.user.324@docflow.test",
+    "full_name": "Lý Đức Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.325",
+    "email": "lt.user.325@docflow.test",
+    "full_name": "Vũ Quang Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.326",
+    "email": "lt.user.326@docflow.test",
+    "full_name": "Dương Bảo Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.327",
+    "email": "lt.user.327@docflow.test",
+    "full_name": "Hoàng Phương Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.328",
+    "email": "lt.user.328@docflow.test",
+    "full_name": "Lý Phương Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.329",
+    "email": "lt.user.329@docflow.test",
+    "full_name": "Trần Bảo Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.330",
+    "email": "lt.user.330@docflow.test",
+    "full_name": "Dương Tuấn Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.331",
+    "email": "lt.user.331@docflow.test",
+    "full_name": "Đỗ Đức Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.332",
+    "email": "lt.user.332@docflow.test",
+    "full_name": "Đỗ Thị Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.333",
+    "email": "lt.user.333@docflow.test",
+    "full_name": "Võ Thanh Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.334",
+    "email": "lt.user.334@docflow.test",
+    "full_name": "Dương Hữu Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.335",
+    "email": "lt.user.335@docflow.test",
+    "full_name": "Nguyễn Thị Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.336",
+    "email": "lt.user.336@docflow.test",
+    "full_name": "Vũ Quang Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.337",
+    "email": "lt.user.337@docflow.test",
+    "full_name": "Lê Thanh Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.338",
+    "email": "lt.user.338@docflow.test",
+    "full_name": "Vũ Hồng Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.339",
+    "email": "lt.user.339@docflow.test",
+    "full_name": "Nguyễn Ngọc Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.340",
+    "email": "lt.user.340@docflow.test",
+    "full_name": "Hoàng Ngọc Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.341",
+    "email": "lt.user.341@docflow.test",
+    "full_name": "Phạm Văn Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.342",
+    "email": "lt.user.342@docflow.test",
+    "full_name": "Nguyễn Bảo Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.343",
+    "email": "lt.user.343@docflow.test",
+    "full_name": "Bùi Văn Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.344",
+    "email": "lt.user.344@docflow.test",
+    "full_name": "Võ Thị Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.345",
+    "email": "lt.user.345@docflow.test",
+    "full_name": "Ngô Đức Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.346",
+    "email": "lt.user.346@docflow.test",
+    "full_name": "Lý Tuấn Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.347",
+    "email": "lt.user.347@docflow.test",
+    "full_name": "Phạm Tuấn Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.348",
+    "email": "lt.user.348@docflow.test",
+    "full_name": "Trần Thu Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.349",
+    "email": "lt.user.349@docflow.test",
+    "full_name": "Nguyễn Thị Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.350",
+    "email": "lt.user.350@docflow.test",
+    "full_name": "Hồ Phương Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.351",
+    "email": "lt.user.351@docflow.test",
+    "full_name": "Lý Tuấn Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.352",
+    "email": "lt.user.352@docflow.test",
+    "full_name": "Lê Hồng Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.353",
+    "email": "lt.user.353@docflow.test",
+    "full_name": "Lê Quang Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.354",
+    "email": "lt.user.354@docflow.test",
+    "full_name": "Bùi Anh Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.355",
+    "email": "lt.user.355@docflow.test",
+    "full_name": "Dương Phương Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.356",
+    "email": "lt.user.356@docflow.test",
+    "full_name": "Phạm Thanh Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.357",
+    "email": "lt.user.357@docflow.test",
+    "full_name": "Dương Hoài Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.358",
+    "email": "lt.user.358@docflow.test",
+    "full_name": "Bùi Tuấn Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.359",
+    "email": "lt.user.359@docflow.test",
+    "full_name": "Ngô Đức Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.360",
+    "email": "lt.user.360@docflow.test",
+    "full_name": "Ngô Hồng Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.361",
+    "email": "lt.user.361@docflow.test",
+    "full_name": "Đỗ Quang Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.362",
+    "email": "lt.user.362@docflow.test",
+    "full_name": "Lê Hữu Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.363",
+    "email": "lt.user.363@docflow.test",
+    "full_name": "Lê Phương Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.364",
+    "email": "lt.user.364@docflow.test",
+    "full_name": "Đỗ Quang Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.365",
+    "email": "lt.user.365@docflow.test",
+    "full_name": "Bùi Đức Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.366",
+    "email": "lt.user.366@docflow.test",
+    "full_name": "Đỗ Phương Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.367",
+    "email": "lt.user.367@docflow.test",
+    "full_name": "Đặng Thu Quân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.368",
+    "email": "lt.user.368@docflow.test",
+    "full_name": "Phạm Thanh Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.369",
+    "email": "lt.user.369@docflow.test",
+    "full_name": "Lý Hoài Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.370",
+    "email": "lt.user.370@docflow.test",
+    "full_name": "Đỗ Bảo Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.371",
+    "email": "lt.user.371@docflow.test",
+    "full_name": "Võ Hoài Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.372",
+    "email": "lt.user.372@docflow.test",
+    "full_name": "Nguyễn Ngọc Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.373",
+    "email": "lt.user.373@docflow.test",
+    "full_name": "Huỳnh Ngọc Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.374",
+    "email": "lt.user.374@docflow.test",
+    "full_name": "Bùi Bảo An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.375",
+    "email": "lt.user.375@docflow.test",
+    "full_name": "Huỳnh Quang Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.376",
+    "email": "lt.user.376@docflow.test",
+    "full_name": "Lê Quang Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.377",
+    "email": "lt.user.377@docflow.test",
+    "full_name": "Lê Thanh Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.378",
+    "email": "lt.user.378@docflow.test",
+    "full_name": "Ngô Tuấn Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.379",
+    "email": "lt.user.379@docflow.test",
+    "full_name": "Huỳnh Bảo Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.380",
+    "email": "lt.user.380@docflow.test",
+    "full_name": "Bùi Hữu Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.381",
+    "email": "lt.user.381@docflow.test",
+    "full_name": "Hoàng Minh Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.382",
+    "email": "lt.user.382@docflow.test",
+    "full_name": "Lê Ngọc Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.383",
+    "email": "lt.user.383@docflow.test",
+    "full_name": "Ngô Mai Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.384",
+    "email": "lt.user.384@docflow.test",
+    "full_name": "Ngô Ngọc Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.385",
+    "email": "lt.user.385@docflow.test",
+    "full_name": "Phạm Bảo Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.386",
+    "email": "lt.user.386@docflow.test",
+    "full_name": "Phạm Thu Việt",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.387",
+    "email": "lt.user.387@docflow.test",
+    "full_name": "Đặng Thị Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.388",
+    "email": "lt.user.388@docflow.test",
+    "full_name": "Hồ Thị An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.389",
+    "email": "lt.user.389@docflow.test",
+    "full_name": "Phan Thu Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.390",
+    "email": "lt.user.390@docflow.test",
+    "full_name": "Hoàng Ngọc Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.391",
+    "email": "lt.user.391@docflow.test",
+    "full_name": "Bùi Đức An",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.392",
+    "email": "lt.user.392@docflow.test",
+    "full_name": "Lý Phương Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.393",
+    "email": "lt.user.393@docflow.test",
+    "full_name": "Hoàng Anh Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.394",
+    "email": "lt.user.394@docflow.test",
+    "full_name": "Đỗ Hữu Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.395",
+    "email": "lt.user.395@docflow.test",
+    "full_name": "Trần Phương Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.396",
+    "email": "lt.user.396@docflow.test",
+    "full_name": "Dương Hữu Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.397",
+    "email": "lt.user.397@docflow.test",
+    "full_name": "Ngô Anh Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.398",
+    "email": "lt.user.398@docflow.test",
+    "full_name": "Đặng Đức Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.399",
+    "email": "lt.user.399@docflow.test",
+    "full_name": "Nguyễn Hồng Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.400",
+    "email": "lt.user.400@docflow.test",
+    "full_name": "Dương Bảo Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.401",
+    "email": "lt.user.401@docflow.test",
+    "full_name": "Ngô Đức Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.402",
+    "email": "lt.user.402@docflow.test",
+    "full_name": "Ngô Anh Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.403",
+    "email": "lt.user.403@docflow.test",
+    "full_name": "Hồ Thu Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.404",
+    "email": "lt.user.404@docflow.test",
+    "full_name": "Vũ Hồng Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.405",
+    "email": "lt.user.405@docflow.test",
+    "full_name": "Lê Đức Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.406",
+    "email": "lt.user.406@docflow.test",
+    "full_name": "Đỗ Bảo Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.407",
+    "email": "lt.user.407@docflow.test",
+    "full_name": "Vũ Đức Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.408",
+    "email": "lt.user.408@docflow.test",
+    "full_name": "Võ Thanh Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.409",
+    "email": "lt.user.409@docflow.test",
+    "full_name": "Hoàng Hữu Lan",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.410",
+    "email": "lt.user.410@docflow.test",
+    "full_name": "Lý Tuấn Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.411",
+    "email": "lt.user.411@docflow.test",
+    "full_name": "Bùi Hồng Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.412",
+    "email": "lt.user.412@docflow.test",
+    "full_name": "Dương Hữu Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.413",
+    "email": "lt.user.413@docflow.test",
+    "full_name": "Dương Thu Nga",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.414",
+    "email": "lt.user.414@docflow.test",
+    "full_name": "Trần Bảo Hà",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.415",
+    "email": "lt.user.415@docflow.test",
+    "full_name": "Đặng Tuấn Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.416",
+    "email": "lt.user.416@docflow.test",
+    "full_name": "Trần Thị Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.417",
+    "email": "lt.user.417@docflow.test",
+    "full_name": "Đặng Hữu Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.418",
+    "email": "lt.user.418@docflow.test",
+    "full_name": "Hồ Tuấn Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.419",
+    "email": "lt.user.419@docflow.test",
+    "full_name": "Dương Thanh Phong",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.420",
+    "email": "lt.user.420@docflow.test",
+    "full_name": "Lý Quang Dũng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.421",
+    "email": "lt.user.421@docflow.test",
+    "full_name": "Dương Đức Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.422",
+    "email": "lt.user.422@docflow.test",
+    "full_name": "Lê Minh Cường",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.423",
+    "email": "lt.user.423@docflow.test",
+    "full_name": "Vũ Tuấn Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.424",
+    "email": "lt.user.424@docflow.test",
+    "full_name": "Huỳnh Bảo Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.425",
+    "email": "lt.user.425@docflow.test",
+    "full_name": "Đặng Anh Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.426",
+    "email": "lt.user.426@docflow.test",
+    "full_name": "Bùi Thị Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.427",
+    "email": "lt.user.427@docflow.test",
+    "full_name": "Lê Hồng Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.428",
+    "email": "lt.user.428@docflow.test",
+    "full_name": "Hồ Thu Nam",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.429",
+    "email": "lt.user.429@docflow.test",
+    "full_name": "Hoàng Hồng Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.430",
+    "email": "lt.user.430@docflow.test",
+    "full_name": "Hoàng Bảo Nhung",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.431",
+    "email": "lt.user.431@docflow.test",
+    "full_name": "Hồ Quang Hải",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.432",
+    "email": "lt.user.432@docflow.test",
+    "full_name": "Đặng Anh Phú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.433",
+    "email": "lt.user.433@docflow.test",
+    "full_name": "Hoàng Hữu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.434",
+    "email": "lt.user.434@docflow.test",
+    "full_name": "Đỗ Văn Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.435",
+    "email": "lt.user.435@docflow.test",
+    "full_name": "Đặng Minh Long",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.436",
+    "email": "lt.user.436@docflow.test",
+    "full_name": "Bùi Mai Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.437",
+    "email": "lt.user.437@docflow.test",
+    "full_name": "Vũ Quang Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.438",
+    "email": "lt.user.438@docflow.test",
+    "full_name": "Lê Thu Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.439",
+    "email": "lt.user.439@docflow.test",
+    "full_name": "Trần Hồng Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.440",
+    "email": "lt.user.440@docflow.test",
+    "full_name": "Hồ Quang Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.441",
+    "email": "lt.user.441@docflow.test",
+    "full_name": "Huỳnh Minh Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.442",
+    "email": "lt.user.442@docflow.test",
+    "full_name": "Trần Phương Quỳnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.443",
+    "email": "lt.user.443@docflow.test",
+    "full_name": "Vũ Tuấn Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.444",
+    "email": "lt.user.444@docflow.test",
+    "full_name": "Dương Hoài Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.445",
+    "email": "lt.user.445@docflow.test",
+    "full_name": "Đặng Mai Linh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.446",
+    "email": "lt.user.446@docflow.test",
+    "full_name": "Đỗ Tuấn Trang",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.447",
+    "email": "lt.user.447@docflow.test",
+    "full_name": "Đặng Anh Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.448",
+    "email": "lt.user.448@docflow.test",
+    "full_name": "Huỳnh Thanh Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.449",
+    "email": "lt.user.449@docflow.test",
+    "full_name": "Võ Thị Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.450",
+    "email": "lt.user.450@docflow.test",
+    "full_name": "Đỗ Đức Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.451",
+    "email": "lt.user.451@docflow.test",
+    "full_name": "Đặng Hữu Khánh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.452",
+    "email": "lt.user.452@docflow.test",
+    "full_name": "Võ Tuấn Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.453",
+    "email": "lt.user.453@docflow.test",
+    "full_name": "Ngô Hữu Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.454",
+    "email": "lt.user.454@docflow.test",
+    "full_name": "Dương Bảo Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.455",
+    "email": "lt.user.455@docflow.test",
+    "full_name": "Ngô Thị Tâm",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.456",
+    "email": "lt.user.456@docflow.test",
+    "full_name": "Đỗ Hoài Sơn",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.457",
+    "email": "lt.user.457@docflow.test",
+    "full_name": "Lê Bảo Mai",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.458",
+    "email": "lt.user.458@docflow.test",
+    "full_name": "Nguyễn Hồng Hạnh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.459",
+    "email": "lt.user.459@docflow.test",
+    "full_name": "Bùi Quang Hoa",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.460",
+    "email": "lt.user.460@docflow.test",
+    "full_name": "Trần Thu Tú",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.461",
+    "email": "lt.user.461@docflow.test",
+    "full_name": "Hoàng Mai Thúy",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.462",
+    "email": "lt.user.462@docflow.test",
+    "full_name": "Nguyễn Hữu Bình",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.463",
+    "email": "lt.user.463@docflow.test",
+    "full_name": "Võ Thanh Hùng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.464",
+    "email": "lt.user.464@docflow.test",
+    "full_name": "Ngô Đức Ngân",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.465",
+    "email": "lt.user.465@docflow.test",
+    "full_name": "Vũ Thu Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.user.466",
+    "email": "lt.user.466@docflow.test",
+    "full_name": "Trần Hoài Thảo",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.user.467",
+    "email": "lt.user.467@docflow.test",
+    "full_name": "Dương Hữu Hiếu",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.user.468",
+    "email": "lt.user.468@docflow.test",
+    "full_name": "Lý Văn Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.user.469",
+    "email": "lt.user.469@docflow.test",
+    "full_name": "Hoàng Thu Thắng",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.user.470",
+    "email": "lt.user.470@docflow.test",
+    "full_name": "Nguyễn Bảo Minh",
+    "password": "Temp@123",
+    "role": "user",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.mgr.001",
+    "email": "lt.mgr.001@docflow.test",
+    "full_name": "Ngô Minh Hải",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.mgr.002",
+    "email": "lt.mgr.002@docflow.test",
+    "full_name": "Đỗ Hữu Bình",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.mgr.003",
+    "email": "lt.mgr.003@docflow.test",
+    "full_name": "Hồ Mai Cường",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.mgr.004",
+    "email": "lt.mgr.004@docflow.test",
+    "full_name": "Hồ Bảo Nam",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.mgr.005",
+    "email": "lt.mgr.005@docflow.test",
+    "full_name": "Nguyễn Bảo Hà",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.mgr.006",
+    "email": "lt.mgr.006@docflow.test",
+    "full_name": "Đỗ Hoài Hạnh",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.mgr.007",
+    "email": "lt.mgr.007@docflow.test",
+    "full_name": "Bùi Quang Cường",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.mgr.008",
+    "email": "lt.mgr.008@docflow.test",
+    "full_name": "Đỗ Hồng Lan",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.mgr.009",
+    "email": "lt.mgr.009@docflow.test",
+    "full_name": "Dương Mai Lan",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.mgr.010",
+    "email": "lt.mgr.010@docflow.test",
+    "full_name": "Hoàng Hữu Trang",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.mgr.011",
+    "email": "lt.mgr.011@docflow.test",
+    "full_name": "Trần Thu Linh",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.mgr.012",
+    "email": "lt.mgr.012@docflow.test",
+    "full_name": "Trần Thanh Cường",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.mgr.013",
+    "email": "lt.mgr.013@docflow.test",
+    "full_name": "Bùi Thu Tâm",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.mgr.014",
+    "email": "lt.mgr.014@docflow.test",
+    "full_name": "Lý Ngọc Cường",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.mgr.015",
+    "email": "lt.mgr.015@docflow.test",
+    "full_name": "Phan Thu Quân",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.mgr.016",
+    "email": "lt.mgr.016@docflow.test",
+    "full_name": "Trần Hồng Nga",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.mgr.017",
+    "email": "lt.mgr.017@docflow.test",
+    "full_name": "Phạm Bảo Thắng",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.mgr.018",
+    "email": "lt.mgr.018@docflow.test",
+    "full_name": "Hồ Tuấn Sơn",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.mgr.019",
+    "email": "lt.mgr.019@docflow.test",
+    "full_name": "Bùi Minh Việt",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.mgr.020",
+    "email": "lt.mgr.020@docflow.test",
+    "full_name": "Lý Bảo Nga",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.mgr.021",
+    "email": "lt.mgr.021@docflow.test",
+    "full_name": "Lê Phương Hải",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.mgr.022",
+    "email": "lt.mgr.022@docflow.test",
+    "full_name": "Ngô Minh Ngân",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.mgr.023",
+    "email": "lt.mgr.023@docflow.test",
+    "full_name": "Bùi Đức Hải",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.mgr.024",
+    "email": "lt.mgr.024@docflow.test",
+    "full_name": "Bùi Thu Nhung",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.mgr.025",
+    "email": "lt.mgr.025@docflow.test",
+    "full_name": "Dương Phương Khánh",
+    "password": "Temp@123",
+    "role": "manager",
+    "is_active": true,
+    "department_code": "IT"
+  },
+  {
+    "username": "lt.admin.001",
+    "email": "lt.admin.001@docflow.test",
+    "full_name": "Dương Bảo Thúy",
+    "password": "Temp@123",
+    "role": "admin",
+    "is_active": true,
+    "department_code": "KT"
+  },
+  {
+    "username": "lt.admin.002",
+    "email": "lt.admin.002@docflow.test",
+    "full_name": "Trần Bảo Thắng",
+    "password": "Temp@123",
+    "role": "admin",
+    "is_active": true,
+    "department_code": "PC"
+  },
+  {
+    "username": "lt.admin.003",
+    "email": "lt.admin.003@docflow.test",
+    "full_name": "Võ Thị Hà",
+    "password": "Temp@123",
+    "role": "admin",
+    "is_active": true,
+    "department_code": "NS"
+  },
+  {
+    "username": "lt.admin.004",
+    "email": "lt.admin.004@docflow.test",
+    "full_name": "Hồ Bảo Khánh",
+    "password": "Temp@123",
+    "role": "admin",
+    "is_active": true,
+    "department_code": "KD"
+  },
+  {
+    "username": "lt.admin.005",
+    "email": "lt.admin.005@docflow.test",
+    "full_name": "Nguyễn Quang Thúy",
+    "password": "Temp@123",
+    "role": "admin",
+    "is_active": true,
+    "department_code": "IT"
+  }
+]

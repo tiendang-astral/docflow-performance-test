@@ -1,0 +1,1324 @@
+[
+  {
+    "name": "Biểu mẫu Hợp đồng kinh tế",
+    "description": "Hợp đồng kinh tế chuẩn",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Phụ lục hợp đồng",
+    "description": "Phụ lục bổ sung hợp đồng",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "don_gia",
+        "field_name": "Đơn giá",
+        "field_type": "number",
+        "description": "Trường Đơn giá",
+        "required": true,
+        "extraction_hints": "Trích xuất Đơn giá từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Thỏa thuận bảo mật",
+    "description": "NDA giữa hai bên",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Biên bản nghiệm thu",
+    "description": "Biên bản nghiệm thu công việc",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "don_gia",
+        "field_name": "Đơn giá",
+        "field_type": "number",
+        "description": "Trường Đơn giá",
+        "required": true,
+        "extraction_hints": "Trích xuất Đơn giá từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Cam kết tuân thủ",
+    "description": "Cam kết tuân thủ pháp luật",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Văn bản pháp lý",
+    "description": "Văn bản pháp lý nội bộ",
+    "tags": [
+      "pc",
+      "loadtest"
+    ],
+    "department_code": "PC",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Hóa đơn GTGT",
+    "description": "Hóa đơn giá trị gia tăng",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Phiếu thu",
+    "description": "Phiếu thu tiền mặt",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Phiếu chi",
+    "description": "Phiếu chi tiền mặt",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Bảng kê chi phí",
+    "description": "Bảng kê chi phí phát sinh",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Báo cáo tài chính",
+    "description": "Báo cáo tài chính định kỳ",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đề nghị tạm ứng",
+    "description": "Đề nghị tạm ứng chi phí",
+    "tags": [
+      "kt",
+      "loadtest"
+    ],
+    "department_code": "KT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Hồ sơ nhân sự",
+    "description": "Hồ sơ thông tin nhân viên",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "ghi_chu",
+        "field_name": "Ghi chú",
+        "field_type": "text",
+        "description": "Trường Ghi chú",
+        "required": true,
+        "extraction_hints": "Trích xuất Ghi chú từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đơn xin nghỉ phép",
+    "description": "Đơn xin nghỉ phép thường",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đơn xin thôi việc",
+    "description": "Đơn xin chấm dứt hợp đồng",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "ghi_chu",
+        "field_name": "Ghi chú",
+        "field_type": "text",
+        "description": "Trường Ghi chú",
+        "required": true,
+        "extraction_hints": "Trích xuất Ghi chú từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Quyết định bổ nhiệm",
+    "description": "Quyết định bổ nhiệm cán bộ",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "ghi_chu",
+        "field_name": "Ghi chú",
+        "field_type": "text",
+        "description": "Trường Ghi chú",
+        "required": true,
+        "extraction_hints": "Trích xuất Ghi chú từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đánh giá nhân viên",
+    "description": "Phiếu đánh giá hiệu suất",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Hợp đồng lao động",
+    "description": "Hợp đồng lao động chuẩn",
+    "tags": [
+      "ns",
+      "loadtest"
+    ],
+    "department_code": "NS",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Báo giá",
+    "description": "Báo giá khách hàng",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đơn đặt hàng",
+    "description": "Đơn đặt hàng từ khách",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Hợp đồng bán hàng",
+    "description": "Hợp đồng bán hàng",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "don_gia",
+        "field_name": "Đơn giá",
+        "field_type": "number",
+        "description": "Trường Đơn giá",
+        "required": true,
+        "extraction_hints": "Trích xuất Đơn giá từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      },
+      {
+        "field_id": "da_thanh_toan",
+        "field_name": "Đã thanh toán",
+        "field_type": "boolean",
+        "description": "Trường Đã thanh toán",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã thanh toán từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Phiếu xuất kho",
+    "description": "Phiếu xuất kho hàng hóa",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Bảng giá sản phẩm",
+    "description": "Bảng giá sản phẩm hiện hành",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đề xuất chiết khấu",
+    "description": "Đề xuất chiết khấu khách hàng",
+    "tags": [
+      "kd",
+      "loadtest"
+    ],
+    "department_code": "KD",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Yêu cầu mua sắm IT",
+    "description": "Yêu cầu mua sắm thiết bị IT",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "dia_chi",
+        "field_name": "Địa chỉ",
+        "field_type": "text",
+        "description": "Trường Địa chỉ",
+        "required": true,
+        "extraction_hints": "Trích xuất Địa chỉ từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Biên bản bàn giao thiết bị",
+    "description": "Biên bản bàn giao thiết bị IT",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Đề xuất triển khai dự án",
+    "description": "Đề xuất triển khai dự án IT",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Báo cáo sự cố",
+    "description": "Báo cáo sự cố hệ thống",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ngay_hieu_luc",
+        "field_name": "Ngày hiệu lực",
+        "field_type": "date",
+        "description": "Trường Ngày hiệu lực",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hiệu lực từ tài liệu"
+      },
+      {
+        "field_id": "ghi_chu",
+        "field_name": "Ghi chú",
+        "field_type": "text",
+        "description": "Trường Ghi chú",
+        "required": true,
+        "extraction_hints": "Trích xuất Ghi chú từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Yêu cầu cấp quyền truy cập",
+    "description": "Yêu cầu cấp quyền truy cập hệ thống",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "ma_so",
+        "field_name": "Mã số",
+        "field_type": "text",
+        "description": "Trường Mã số",
+        "required": true,
+        "extraction_hints": "Trích xuất Mã số từ tài liệu"
+      },
+      {
+        "field_id": "ngay_het_han",
+        "field_name": "Ngày hết hạn",
+        "field_type": "date",
+        "description": "Trường Ngày hết hạn",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày hết hạn từ tài liệu"
+      },
+      {
+        "field_id": "da_phe_duyet",
+        "field_name": "Đã phê duyệt",
+        "field_type": "boolean",
+        "description": "Trường Đã phê duyệt",
+        "required": false,
+        "extraction_hints": "Trích xuất Đã phê duyệt từ tài liệu"
+      }
+    ]
+  },
+  {
+    "name": "Biểu mẫu Báo cáo hiệu năng",
+    "description": "Báo cáo hiệu năng hệ thống",
+    "tags": [
+      "it",
+      "loadtest"
+    ],
+    "department_code": "IT",
+    "fields": [
+      {
+        "field_id": "ho_ten",
+        "field_name": "Họ và tên",
+        "field_type": "text",
+        "description": "Trường Họ và tên",
+        "required": true,
+        "extraction_hints": "Trích xuất Họ và tên từ tài liệu"
+      },
+      {
+        "field_id": "so_luong",
+        "field_name": "Số lượng",
+        "field_type": "number",
+        "description": "Trường Số lượng",
+        "required": true,
+        "extraction_hints": "Trích xuất Số lượng từ tài liệu"
+      },
+      {
+        "field_id": "thue_suat",
+        "field_name": "Thuế suất (%)",
+        "field_type": "number",
+        "description": "Trường Thuế suất (%)",
+        "required": true,
+        "extraction_hints": "Trích xuất Thuế suất (%) từ tài liệu"
+      },
+      {
+        "field_id": "ngay_lap",
+        "field_name": "Ngày lập",
+        "field_type": "date",
+        "description": "Trường Ngày lập",
+        "required": true,
+        "extraction_hints": "Trích xuất Ngày lập từ tài liệu"
+      }
+    ]
+  }
+]
