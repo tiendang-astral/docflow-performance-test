@@ -2,16 +2,16 @@
 # Chạy tất cả stress test qua các bậc MAX_VU.
 #
 # Bậc VU:
-#   - Normal modules  (templates, rules, dossiers, uploads): 50, 100, 150, 200, 250, 300
-#   - Heavy  modules  (ai-drafts, assessment, run-full-flow): 10, 20, 30, 40, 50
+#   - Normal modules  (templates, rules, dossiers):                  50, 100, 150, 200, 250, 300
+#   - Heavy  modules  (uploads, ai-drafts, assessment, run-full-flow): 10, 20, 30, 40, 50
 #
 # Mỗi file stress dùng stages.stress với MAX_VU env var:
 #   ramp 20s → hold 1m @ MAX_VU → ramp 20s → tổng ~100s/file
 #
 # Tổng ước lượng:
-#   Normal: 4 modules × ~5 files × 6 VU bậc = ~120 runs × 100s ≈ 3.5 giờ
-#   Heavy : 3 modules × ~3 files × 5 VU bậc = ~45 runs × 100s ≈ 1.2 giờ
-#   Tổng ≈ 5 giờ. Cân nhắc trước khi chạy full.
+#   Normal: 3 modules × ~5 files × 6 VU bậc = ~90 runs × 100s ≈ 2.5 giờ
+#   Heavy : 4 modules × ~3 files × 5 VU bậc = ~60 runs × 100s ≈ 1.7 giờ
+#   Tổng ≈ 4.2 giờ. Cân nhắc trước khi chạy full.
 #
 # Usage:
 #   ./scripts/run-all-stress.sh                    # chạy hết
@@ -40,9 +40,9 @@ NORMAL_MODULES=(
   "tests/templates/stress"
   "tests/rules/stress"
   "tests/dossiers/stress"
-  "tests/uploads/stress"
 )
 HEAVY_MODULES=(
+  "tests/uploads/stress"
   "tests/assessment/stress"
   "tests/run-full-flow/stress"
   "tests/ai-drafts/stress"
@@ -76,7 +76,7 @@ run_sweep() {
     for mod in "${modules[@]}"; do
       while IFS= read -r -d '' f; do
         printf '\n──── [VU=%d] %s ────\n' "$vu" "$f"
-        if MAX_VU="$vu" k6 run "$f"; then
+        if MAX_VU="$vu" RESULTS_DIR="$RESULTS_DIR" k6 run "$f"; then
           PASS_COUNT=$((PASS_COUNT + 1))
           PASS_LIST+=( "VU=$vu $f" )
         else
@@ -90,7 +90,9 @@ run_sweep() {
 
 # ── Dispatch ────────────────────────────────────────────────────────────────
 command -v k6 >/dev/null || { echo "✗ k6 chưa cài: brew install k6"; exit 1; }
-mkdir -p results
+RESULTS_DIR="${RESULTS_DIR:-results-final}"
+mkdir -p "$RESULTS_DIR"
+echo "→ Stress summary dump to: $RESULTS_DIR/"
 
 case "$MODE" in
   all|quick)

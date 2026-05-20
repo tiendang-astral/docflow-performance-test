@@ -43,10 +43,11 @@ const users = new SharedArray('users', () =>
 const enqueueTrend = new Trend('extract_enqueue_duration', true);
 const pollTrend    = new Trend('extract_poll_duration',    true);
 const e2eTrend     = new Trend('extract_e2e_duration',     true);
-const completedCnt = new Counter('extract_completed');
-const failedCnt    = new Counter('extract_failed');
-const timeoutCnt   = new Counter('extract_timeout');
-const reusedCnt    = new Counter('extract_reused_existing');
+const completedCnt    = new Counter('extract_completed');
+const failedCnt       = new Counter('extract_failed');
+const preconditionCnt = new Counter('extract_precondition_fail');
+const timeoutCnt      = new Counter('extract_timeout');
+const reusedCnt       = new Counter('extract_reused_existing');
 
 export const options = {
   stages: stages.stress,
@@ -117,6 +118,7 @@ export default function ({ tokens, seedIds }) {
     completedCnt.add(1);
     // Chấp nhận precondition-fail (vd no markdown) là healthy — endpoint + job lifecycle OK
     if (isExtractPreconditionFail(finalJob.result)) {
+      preconditionCnt.add(1);
       check(null, {
         'result: precondition-fail hợp lệ': () =>
           finalJob.result?.success === false && typeof finalJob.result?.message === 'string',

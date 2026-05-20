@@ -17,7 +17,6 @@ import { check, sleep } from 'k6';
 import { SharedArray } from 'k6/data';
 
 import { login, authParams } from '../../../lib/auth.js';
-import { stages } from '../../../lib/stages.js';
 import { buildSummary } from '../../../lib/report.js';
 import {
   getAdminUser,
@@ -31,8 +30,22 @@ const users = new SharedArray('users', () =>
   JSON.parse(open('../../../data/seed/users.json'))
 );
 
+// Sync endpoint block 10-30s/req → KHÔNG dùng stages.stress mặc định (ramp tới 200 VU
+// sẽ làm cạn worker/connection pool). Bắt buộc set MAX_VU và cap ≤ 10.
+const MAX_VU = __ENV.MAX_VU ? parseInt(__ENV.MAX_VU, 10) : 0;
+if (!MAX_VU) {
+  throw new Error('run-full-flow/sync stress: MAX_VU bắt buộc. Khuyến nghị 3-10. Vd: k6 run -e MAX_VU=5 ...');
+}
+if (MAX_VU > 10) {
+  throw new Error(`run-full-flow/sync stress: MAX_VU=${MAX_VU} quá cao (cap=10). Endpoint block lâu, nhiều VU sẽ cạn worker. Dùng async (v3) cho stress thật.`);
+}
+
 export const options = {
-  stages: stages.stress,
+  stages: [
+    { duration: '20s', target: MAX_VU },
+    { duration: '1m',  target: MAX_VU },
+    { duration: '20s', target: 0       },
+  ],
   thresholds: {
     checks: ['rate>0.85'],            // sync endpoint dễ timeout/flaky
     http_req_failed: ['rate<0.15'],

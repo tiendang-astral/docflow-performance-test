@@ -38,9 +38,10 @@ const users = new SharedArray('users', () =>
 const enqueueTrend = new Trend('extract_enqueue_duration', true);
 const pollTrend    = new Trend('extract_poll_duration',    true);
 const e2eTrend     = new Trend('extract_e2e_duration',     true);
-const completedCnt = new Counter('extract_completed');
-const failedCnt    = new Counter('extract_failed');
-const timeoutCnt   = new Counter('extract_timeout');
+const completedCnt    = new Counter('extract_completed');
+const failedCnt       = new Counter('extract_failed');
+const preconditionCnt = new Counter('extract_precondition_fail');
+const timeoutCnt      = new Counter('extract_timeout');
 
 export const options = {
   vus: 1,
@@ -124,6 +125,7 @@ export default function ({ tokens, seedIds }) {
     // Precondition fail (vd seed dossier chưa có pool markdown) → endpoint healthy,
     // chỉ assert job lifecycle hoạt động + message rõ ràng. Skip schema sâu.
     if (isExtractPreconditionFail(finalJob.result)) {
+      preconditionCnt.add(1);
       check(null, {
         'precondition-fail: success=false':    () => finalJob.result.success === false,
         'precondition-fail: có message rõ':    () =>
